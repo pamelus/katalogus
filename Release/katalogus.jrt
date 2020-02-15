@@ -1,0 +1,2446 @@
+{\rtf1\ansi\deff0
+
+{\fonttbl
+{\f0\fnil\fcharset0 Arial;}
+{\f1\fnil Arial;}
+{\f2\fswiss\fprq2\fcharset0 Arial;}
+{\f3\fswiss\fprq2\fcharset238{\*\fname Arial;}Arial CE;}
+{\f4\fnil\fcharset238{\*\fname Arial;}Arial CE;}
+}
+
+{\colortbl;
+\red0\green0\blue0;
+\red0\green128\blue0;
+\red0\green0\blue128;
+}
+
+\plain\fs20\cf1
+
+#{\footnote 0}
+\keepn\b0\i0\cf0
+\lang1045
+\b
+\i
+\f2
+\fs28
+Do czego s\f3
+\'b3
+\f2
+u\f3
+\'bf
+\f2
+y Katalogus 3.2\b0
+\i0
+\f1
+\fs20
+\par
+\pard
+\b0\i0
+\cf1
+\f1
+\fs20
+\par
+\cf1
+\f2
+Katalogus 3.2 jest programem s\f3
+\'b3
+\f2
+u\f3
+\'bf
+\'b9
+\f2
+cym do katalogowania zbior\f3
+\'f3
+\f2
+w muzycznych znajduj\f3
+\'b9
+\f2
+cych si\f3
+\'ea
+\f2
+ w plikach mp3 (cho\f3
+\'e6
+\f2
+ nie tylko). Aplikacja jest szczeg\f3
+\'f3
+\f2
+lnie przydatna dla os\f3
+\'f3
+\f2
+b, kt\f3
+\'f3
+\f2
+re pliki muzyczne przechowuj\f3
+\'b9
+\f2
+ na wielu r\f3
+\'f3
+\'bf
+\f2
+nych dyskach czy te\f3
+\'bf
+\f2
+ p\f3
+\'b3
+\f2
+ytach CD. Tym u\f3
+\'bf
+\f2
+ytkownikom Katalogus pomo\f3
+\'bf
+\f2
+e zorientowa\f3
+\'e6
+\f2
+ si\f3
+\'ea
+\f2
+, na kt\f3
+\'f3
+\f2
+rym CD znajduje si\f3
+\'ea
+\f2
+ dany utw\f3
+\'f3
+\f2
+r b\f3
+\'b9
+\f2
+d\f3
+\'9f
+\f2
+ album. Dodatkowo program samodzielnie przeszuka dany dysk CD automatycznie dodaj\f3
+\'b9
+\f2
+c do bazy danych wszystkich wykonawc\f3
+\'f3
+\f2
+w, albumy i utwory znajduj\f3
+\'b9
+\f2
+ce si\f3
+\'ea
+\f2
+ na no\f3
+\'9c
+\f2
+niku.\cf1
+\f1
+\par
+
+\page
+
+#{\footnote 1}
+\keepn\b0\i0\cf0
+\lang1045
+\b
+\i
+\f2
+\fs28
+Licencja komercyjna\b0
+\i0
+\f1
+\fs20
+\par
+\pard
+\b0\i0
+\f2
+\fs20
+\par
+Katalogus 3.2 jest programem dost\f3
+\'ea
+\f2
+pnym na licencji FREEWARE jedynie do cel\f3
+\'f3
+\f2
+w niekomercyjnych. Obecnie nie widz\f3
+\'ea
+\f2
+ sposobu komercyjnego wykorzystania aplikacji (no chyba \f3
+\'bf
+\f2
+e jeste\f3
+\'9c
+\f2
+ piratem i sprzedajesz nielegaln\f3
+\'b9
+\f2
+ muzyk\f3
+\'ea
+\f2
+ - ale czy wtedy b\f3
+\'ea
+\f2
+dziesz zawraca\f3
+\'b3
+\f2
+ sobie g\f3
+\'b3
+\f2
+ow\f3
+\'ea
+\f2
+ licencj\f3
+\'b9
+\f2
+?). Gdyby jednak\f3
+\'bf
+\f2
+e kto\f3
+\'9c
+\f2
+ chcia\f3
+\'b3
+\f2
+ wykorzysta\f3
+\'e6
+\f2
+ program w celach komercyjnych  prosz\f3
+\'ea
+\f2
+ o kontakt pod adresem e-mail: \cf2
+\lang1033
+
+
+{\uldb pamelus86@yahoo.co.uk}{\v !ExecFile(mailto:pamelus86@yahoo.co.uk)}\cf3
+
+ \cf1
+\lang1045
+
+. Potencjalnych kupc\f3
+\'f3
+\f2
+w uprzedzam, \f3
+\'bf
+\f2
+e nie udzielam \f3
+\'bf
+\f2
+adnych gwarancji, pomocy technicznej ani innych tego typu dupereli. Korzystacie na w\f3
+\'b3
+\f2
+asn\f3
+\'b9
+\f2
+ odpowiedzialno\f3
+\'9c
+\'e6
+\f2
+!\cf1
+\f1
+\par
+
+\page
+
+#{\footnote 2}
+\keepn\b0\i0\cf0
+\lang1045
+\b
+\i
+\f2
+\fs28
+Historia programu\b0
+\i0
+\f1
+\fs20
+\par
+\pard
+\b0\i0
+\f2
+\fs20
+\par
+Idea stworzenia Katalogusa zrodzi\f3
+\'b3
+\f2
+a si\f3
+\'ea
+\f2
+ na pocz\f3
+\'b9
+\f2
+tku 2003 roku. Dopiero zaczyna\f3
+\'b3
+\f2
+em wtedy programowa\f3
+\'e6
+\f2
+ w c++, wi\f3
+\'ea
+\f2
+c Katalogus 1.0 by\f3
+\'b3
+\f2
+ aplikacj\f3
+\'b9
+\f2
+ konsolow\f3
+\'b9
+\f2
+. Obs\f3
+\'b3
+\f2
+ugiwa\f3
+\'b3
+\f2
+ maksymalnie dwudziestu wykonawc\f3
+\'f3
+\f2
+w, z kt\f3
+\'f3
+\f2
+rych ka\f3
+\'bf
+\f2
+dy m\f3
+\'f3
+\f2
+g\f3
+\'b3
+\f2
+ mie\f3
+\'e6
+\f2
+ po dwadzie\f3
+\'9c
+\f2
+cia album\f3
+\'f3
+\f2
+w i dwadzie\f3
+\'9c
+\f2
+cia utwor\f3
+\'f3
+\f2
+w. Ale za to by\f3
+\'b3
+\f2
+ nad podziw stabilny. Niestety zar\f3
+\'f3
+\f2
+wno kod \f3
+\'9f
+\f2
+r\f3
+\'f3
+\f2
+d\f3
+\'b3
+\f2
+owy jak i pliki wykonywalne pierwszej wersji Katalogusa zagin\f3
+\'ea
+\'b3
+\f2
+y gdzie\f3
+\'9c
+\f2
+ w zawierusze dziej\f3
+\'f3
+\f2
+w, prawdopodobnie podczas formatowania dysku.\par
+\par
+Par\f3
+\'ea
+\f2
+ miesi\f3
+\'ea
+\f2
+cy p\f3
+\'f3
+\'9f
+\f2
+niej odkry\f3
+\'b3
+\f2
+em tajniki programowania pod Windows (WinAPI) i postanowi\f3
+\'b3
+\f2
+em stworzy\f3
+\'e6
+\f2
+ wersj\f3
+\'ea
+\f2
+ okienkow\f3
+\'b9
+\f2
+ mojego programu. Wersja 2.0 mia\f3
+\'b3
+\f2
+a obrzydliwy interfejs i wiesza\f3
+\'b3
+\f2
+a si\f3
+\'ea
+\f2
+ r\f3
+\'f3
+\f2
+wnie cz\f3
+\'ea
+\f2
+sto, co pierwsze wersje okienek. Dodatkowo nigdy tak na prawd\f3
+\'ea
+\f2
+ nie zosta\f3
+\'b3
+\f2
+a uko\f3
+\'f1
+\f2
+czona. Wersja 2.1 odziedziczy\f3
+\'b3
+\f2
+a interfejs po poprzedniczce i wiesza\f3
+\'b3
+\f2
+a si\f3
+\'ea
+\f2
+ ju\f3
+\'bf
+\f2
+ mniej, ale nadal zbyt cz\f3
+\'ea
+\f2
+sto. Obie wersje rozszerzy\f3
+\'b3
+\f2
+y mo\f3
+\'bf
+\f2
+liwo\f3
+\'9c
+\f2
+ci bazy danych do przechowywania dwustu wykonawc\f3
+\'f3
+\f2
+w, siedemdziesi\f3
+\'ea
+\f2
+ciu pi\f3
+\'ea
+\f2
+ciu album\f3
+\'f3
+\f2
+w dla ka\f3
+\'bf
+\f2
+dego wykonawcy, oraz siedemdziesi\f3
+\'ea
+\f2
+ciu pi\f3
+\'ea
+\f2
+ciu utwor\f3
+\'f3
+\f2
+w dla ka\f3
+\'bf
+\f2
+dego albumu. Niestety te wersje r\f3
+\'f3
+\f2
+wnie\f3
+\'bf
+\f2
+ zagin\f3
+\'ea
+\'b3
+\f2
+y.\par
+\par
+Min\f3
+\'ea
+\'b3
+\f2
+o kolejnych kilka miesi\f3
+\'ea
+\f2
+cy. Nauczy\f3
+\'b3
+\f2
+em si\f3
+\'ea
+\f2
+ ju\f3
+\'bf
+\f2
+ porz\f3
+\'b9
+\f2
+dnie programowa\f3
+\'e6
+\f2
+. W kwietniu 2004 roku powsta\f3
+\'b3
+\f2
+ wi\f3
+\'ea
+\f2
+c Katalogus 3.0 - a w\f3
+\'b3
+\f2
+a\f3
+\'9c
+\f2
+ciwie powstawa\f3
+\'b3
+\f2
+, bo b\f3
+\'ea
+\f2
+d\f3
+\'b9
+\f2
+c mniej wi\f3
+\'ea
+\f2
+cej w po\f3
+\'b3
+\f2
+owie procesu   tworzenia wy\f3
+\'b3
+\f2
+apa\f3
+\'b3
+\f2
+em zbyt du\f3
+\'bf
+\f2
+o b\f3
+\'b3
+\'ea
+\f2
+d\f3
+\'f3
+\f2
+w i niedoci\f3
+\'b9
+\f2
+gni\f3
+\'ea
+\'e6
+\f2
+ (pozosta\f3
+\'b3
+\f2
+o\f3
+\'9c
+\'e6
+\f2
+ po poprzednich wersjach) i postanowi\f3
+\'b3
+\f2
+em rozpocz\f3
+\'b9
+\'e6
+\f2
+ pisanie od zera. Zaprojektowa\f3
+\'b3
+\f2
+em now\f3
+\'b9
+\f2
+ baz\f3
+\'ea
+\f2
+ danych obs\f3
+\'b3
+\f2
+uguj\f3
+\'b9
+\f2
+c\f3
+\'b9
+\f2
+ niesko\f3
+\'f1
+\f2
+czon\f3
+\'b9
+\f2
+ liczb\f3
+\'ea
+\f2
+  wykonawc\f3
+\'f3
+\f2
+w, album\f3
+\'f3
+\f2
+w i utwor\f3
+\'f3
+\f2
+w (ograniczon\f3
+\'b9
+\f2
+ jedynie przez pami\f3
+\'ea
+\'e6
+\f2
+ komputera) i przyjazny dla oka interfejs. Ale ta wersja r\f3
+\'f3
+\f2
+wnie\f3
+\'bf
+\f2
+ nie zosta\f3
+\'b3
+\f2
+a uko\f3
+\'f1
+\f2
+czona (cho\f3
+\'e6
+\f2
+ by\f3
+\'b3
+\f2
+o blisko i dzi\f3
+\'9c
+\f2
+ Katalogus 3.1 jest praktycznie w pe\f3
+\'b3
+\f2
+ni dzia\f3
+\'b3
+\f2
+aj\f3
+\'b9
+\f2
+c\f3
+\'b9
+\f2
+ aplikacj\f3
+\'b9
+\f2
+). W moim chorym umy\f3
+\'9c
+\f2
+le zrodzi\f3
+\'b3
+\f2
+ si\f3
+\'ea
+\f2
+ pomys\f3
+\'b3
+\f2
+ przeniesienia Katalogusa w \f3
+\'9c
+\f2
+wiat MDI i sta\f3
+\'b3
+\f2
+o si\f3
+\'ea
+\f2
+. Powsta\f3
+\'b3
+\f2
+ Katalogus 3.2, kt\f3
+\'f3
+\f2
+ry teraz znajduje si\f3
+\'ea
+\f2
+ na twoim dysku twardym, ze standardowym interfejsem, spor\f3
+\'b9
+\f2
+ liczb\f3
+\'b9
+\f2
+ opcji i innymi bajerami. Mo\f3
+\'bf
+\f2
+e kiedy\f3
+\'9c
+\f2
+ powstanie wersja 4.0? Po\f3
+\'bf
+\f2
+yjemy zobaczymy - teraz ma\f3
+\'b3
+\f2
+y histogram.\par
+\par
+1.0 - konsolowy badziew totalny. dwudziestu wykonawc\f3
+\'f3
+\f2
+w, dwadzie\f3
+\'9c
+\f2
+cia album\f3
+\'f3
+\f2
+w dwadzie\f3
+\'9c
+\f2
+cia utwor\f3
+\'f3
+\f2
+w. \f3
+\'af
+\f2
+adnego wyszukiwania, ustawie\f3
+\'f1
+\f2
+, pomocy, nic. Ale tak w\f3
+\'b3
+\f2
+a\f3
+\'9c
+\f2
+nie si\f3
+\'ea
+\f2
+ zacz\f3
+\'ea
+\'b3
+\f2
+o.\par
+\par
+2.0 - dodane ustawienia (ale bardzo ubogie), prosty algorytm wyszukiwania i bardzo powolny sortowania. Interfejs oparty na prostej li\f3
+\'9c
+\f2
+cie i kilku oknach pomocniczych. Dwustu wykonawc\f3
+\'f3
+\f2
+w, siedemdziesi\f3
+\'b9
+\f2
+t pi\f3
+\'ea
+\'e6
+\f2
+ album\f3
+\'f3
+\f2
+w, siedemdziesi\f3
+\'b9
+\f2
+t pi\f3
+\'ea
+\'e6
+\f2
+ utwor\f3
+\'f3
+\f2
+w. Nigdy nie uko\f3
+\'f1
+\f2
+czona wiesza\f3
+\'b3
+\f2
+a si\f3
+\'ea
+\f2
+ cz\f3
+\'ea
+\'9c
+\f2
+ciej ni\f3
+\'bf
+\f2
+ Windows 95.\par
+\par
+2.1 - uko\f3
+\'f1
+\f2
+czona i poprawiona wersja poprzedniczki, ale r\f3
+\'f3
+\f2
+wnie\f3
+\'bf
+\f2
+ zbyt cz\f3
+\'ea
+\f2
+sto si\f3
+\'ea
+\f2
+ wiesza\f3
+\'b3
+\f2
+a. Innych udoskonale\f3
+\'f1
+\f2
+ brak.\par
+\par
+3.0 - pierwszy Katalogus z prawdziwego zdarzenia, ale uko\f3
+\'f1
+\f2
+czony tylko do po\f3
+\'b3
+\f2
+owy. Obs\f3
+\'b3
+\f2
+ugiwa\f3
+\'b3
+\f2
+  tysi\f3
+\'b9
+\f2
+c dwudziestu czterech wykonawc\f3
+\'f3
+\f2
+w, tyle\f3
+\'bf
+\f2
+ album\f3
+\'f3
+\f2
+w dla ka\f3
+\'bf
+\f2
+dego wykonawcy i utwor\f3
+\'f3
+\f2
+w dla albumu.\par
+\par
+3.1 - niemal\f3
+\'bf
+\f2
+e uko\f3
+\'f1
+\f2
+czony. Obs\f3
+\'b3
+\f2
+ugiwa\f3
+\'b3
+\f2
+ niesko\f3
+\'f1
+\f2
+czon\f3
+\'b9
+\f2
+ liczb\f3
+\'ea
+\f2
+ wykonawc\f3
+\'f3
+\f2
+w, album\f3
+\'f3
+\f2
+w i utwor\f3
+\'f3
+\f2
+w. Potrafi\f3
+\'b3
+\f2
+ skanowa\f3
+\'e6
+\f2
+ dysk (cho\f3
+\'e6
+\f2
+ nie czyta\f3
+\'b3
+\f2
+ ID3 tag\f3
+\'f3
+\f2
+w) i posiada\f3
+\'b3
+\f2
+ du\f3
+\'bf
+\'b9
+\f2
+ liczb\f3
+\'ea
+\f2
+ opcji. Umo\f3
+\'bf
+\f2
+liwia\f3
+\'b3
+\f2
+ zabezpieczenie bazy danych has\f3
+\'b3
+\f2
+em, kt\f3
+\'f3
+\f2
+re nie by\f3
+\'b3
+\f2
+o szyfrowane i ka\f3
+\'bf
+\f2
+dy kto umia\f3
+\'b3
+\f2
+ otworzy\f3
+\'e6
+\f2
+ plik bazy danych notatnikiem m\f3
+\'f3
+\f2
+g\f3
+\'b3
+\f2
+ je sobie przeczyta\f3
+\'e6
+\f2
+ - baza danych by\f3
+\'b3
+\f2
+a plikiem tekstowym, a has\f3
+\'b3
+\f2
+o znajdowa\f3
+\'b3
+\f2
+o si\f3
+\'ea
+\f2
+ na samej g\f3
+\'f3
+\f2
+rze.\par
+\par
+3.2 - to w\f3
+\'b3
+\f2
+a\f3
+\'9c
+\f2
+nie z niego korzystasz. Zapisuje pliki binarnie, szyfruje has\f3
+\'b3
+\f2
+o i ma zaimplementowany naprawd\f3
+\'ea
+\f2
+ szybki algorytm sortowania (ok. 1000x szybszy od tego z poprzedniej wersji). Umo\f3
+\'bf
+\f2
+liwia wygenerowanie statystyki oraz raportu (plik HTML).\par
+\cf1
+\f1
+\par
+
+\page
+
+#{\footnote 3}
+\keepn\b0\i0\cf0
+\lang1045
+\b
+\i
+\f2
+\fs28
+O autorze i podzi\f3
+\'ea
+\f2
+kowania\b0
+\i0
+\f1
+\fs20
+\par
+\pard
+\b0\i0
+\f2
+\fs20
+\par
+Jedynym i wy\f3
+\'b3
+\'b9
+\f2
+cznym autorem programu Katalogus 3.2 jest Patryk Koz\f3
+\'b3
+\f2
+owski, pa\f3
+\'9f
+\f2
+dziernik 2004.\par
+Autor chcia\f3
+\'b3
+\f2
+by podzi\f3
+\'ea
+\f2
+kowa\f3
+\'e6
+\f2
+ wszystkim osobom, kt\f3
+\'f3
+\f2
+re w jakikolwiek spos\f3
+\'f3
+\f2
+b przyczyni\f3
+\'b3
+\f2
+y si\f3
+\'ea
+\f2
+ do powstania programu. W szczeg\f3
+\'f3
+\f2
+lno\f3
+\'9c
+\f2
+ci s\f3
+\'b9
+\f2
+ to (kolejno\f3
+\'9c
+\'e6
+\f2
+ alfabetyczna):\par
+ - Robert Flasi\f3
+\'f1
+\f2
+ski\par
+ - Tomek Koz\f3
+\'b3
+\f2
+owski\par
+ - Gra\f3
+\'bf
+\f2
+yna Koz\f3
+\'b3
+\f2
+owska\par
+ - Micha\f3
+\'b3
+\f2
+ Scheffs\par
+ - Radek Sobieszczyk\cf1
+\f1
+\par
+
+\page
+
+#{\footnote 4}
+\keepn\b0\i0\cf0
+\lang1045
+\b
+\i
+\f2
+\fs28
+Interfejs\b0
+\i0
+\f1
+\fs20
+\par
+\pard
+\b0\i0
+\f2
+\fs20
+\par
+Interfejs programu mo\f3
+\'bf
+\f2
+na podzieli\f3
+\'e6
+\f2
+ na kilka sekcji.\par
+\par
+\cf2
+
+
+\{bmc interfejs1.bmp\}
+\cf1
+
+ 
+\par
+\par
+\b
+Menu g\f3
+\'b3
+\'f3
+\f2
+wne\par
+\par
+\cf2
+
+\b0
+
+\{bmc interfejs2.bmp\}
+\cf1
+
+\b
+ 
+\par
+\b0
+\par
+To tutaj przede wszystkim wydawane s\f3
+\'b9
+\f2
+ komendy. Menu zachowuje si\f3
+\'ea
+\f2
+ tak samo, jak w ka\f3
+\'bf
+\f2
+dym innym programie.\par
+\par
+\b
+Pasek narz\f3
+\'ea
+\f2
+dzi\par
+\par
+\cf2
+
+\b0
+
+\{bmc interfejs3.bmp\}
+\cf1
+
+\b
+ 
+\par
+\b0
+\par
+Zawiera przyciski wywo\f3
+\'b3
+\f2
+uj\f3
+\'b9
+\f2
+ce najcz\f3
+\'ea
+\'9c
+\f2
+ciej u\f3
+\'bf
+\f2
+ywane w programie komendy. Dzi\f3
+\'ea
+\f2
+ki temu nie trzeba ci\f3
+\'b9
+\f2
+gle przekopywa\f3
+\'e6
+\f2
+ si\f3
+\'ea
+\f2
+ przez g\f3
+\'b3
+\'f3
+\f2
+wne menu. Poszczeg\f3
+\'f3
+\f2
+lne przyciski odpowiadaj\f3
+\'b9
+\f2
+ za:\par
+1 - utworzenie nowej bazy danych\par
+2 - wczytanie bazy danych\par
+3 - zapisanie bazy danych\par
+4 - dodanie pozycji do bazy danych\par
+5 - edycj\f3
+\'ea
+\f2
+ istniej\f3
+\'b9
+\f2
+cej pozycji\par
+6 - usuni\f3
+\'ea
+\f2
+cie pozycji z bazy danych\par
+7 - otworzenie pozycji\par
+8 - zamkni\f3
+\'ea
+\f2
+cie pozycji\par
+9 - przeniesienie pozycji w g\f3
+\'f3
+\f2
+r\f3
+\'ea
+\f2
+\par
+10 - przeniesienie pozycji w d\f3
+\'f3
+\'b3
+\f2
+\par
+\par
+\b
+Okno g\f3
+\'b3
+\'f3
+\f2
+wne\b0
+\par
+To tutaj pojawiaj\f3
+\'b9
+\f2
+ si\f3
+\'ea
+\f2
+ kolejne okna bazy danych\par
+\par
+\b
+Okno bazy danych\par
+\par
+\cf2
+
+\b0
+
+\{bmc interfejs4.bmp\}
+\cf1
+
+\b
+ 
+\par
+\b0
+\par
+W tym oknie prezentowana jest zawarto\f3
+\'9c
+\'e6
+\f2
+ bazy danych. \par
+\par
+\par
+\b
+Pasek stanu\par
+\par
+\cf2
+
+\b0
+
+\{bmc interfejs5.bmp\}
+\cf1
+
+\b
+ 
+\par
+\b0
+\par
+Pasek dzieli si\f3
+\'ea
+\f2
+ na trzy cz\f3
+\'ea
+\'9c
+\'e6
+\f2
+:\par
+1 - pokazuje liczb\f3
+\'ea
+\f2
+ obiekt\f3
+\'f3
+\f2
+w wy\f3
+\'9c
+\f2
+wietlonych w aktywnym oknie bazy danych\par
+2 - pokazuje stan aktywnej bazy danych (zmodyfikowana czy nie)\par
+3 - pokazuje lokalizacj\f3
+\'ea
+\f2
+ obiekt\f3
+\'f3
+\f2
+w wy\f3
+\'9c
+\f2
+wietlonych w aktywnym oknie bazy danych\par
+\cf1
+\f1
+\par
+
+\page
+
+#{\footnote 5}
+\keepn\b0\i0\cf0
+\lang1045
+\b
+\i
+\f2
+\fs28
+Skanowanie dysku\b0
+\i0
+\f1
+\fs20
+\par
+\pard
+\b0\i0
+\cf1
+\f1
+\fs20
+\par
+\cf1
+\f2
+Aby przeszuka\f3
+\'e6
+\f2
+ dysk b\f3
+\'b9
+\f2
+d\f3
+\'9f
+\f2
+ folder w poszukiwaniu utwor\f3
+\'f3
+\f2
+w muzycznych z menu g\f3
+\'b3
+\'f3
+\f2
+wnego nale\f3
+\'bf
+\f2
+y  wybra\f3
+\'e6
+\f2
+ \i
+Narz\f3
+\'ea
+\f2
+dzia->Skanowanie dysku\i0
+ i wskaza\f3
+\'e6
+\f2
+ folder do przeszukania. Mo\f3
+\'bf
+\f2
+na te\f3
+\'bf
+\f2
+ przeci\f3
+\'b9
+\f2
+gn\f3
+\'b9
+\'e6
+\f2
+ folder(y) na okno bazy danych. Przed skanowaniem uka\f3
+\'bf
+\f2
+e si\f3
+\'ea
+\f2
+ okno dialogowe w kt\f3
+\'f3
+\f2
+rym mo\f3
+\'bf
+\f2
+na uzupe\f3
+\'b3
+\f2
+ni\f3
+\'e6
+\f2
+ informacje o elementach jakie zostan\f3
+\'b9
+\f2
+ dodane. Nast\f3
+\'ea
+\f2
+pnie rozpocznie si\f3
+\'ea
+\f2
+ skanowanie i po pewnym czasie (w zale\f3
+\'bf
+\f2
+no\f3
+\'9c
+\f2
+ci od ilo\f3
+\'9c
+\f2
+ci danych i szybko\f3
+\'9c
+\f2
+ci komputera) do bazy danych dodane zostan\f3
+\'ea
+\f2
+ wyszukane elementy. Nazwy wykonawc\f3
+\'f3
+\f2
+w, album\f3
+\'f3
+\f2
+w i utwor\f3
+\'f3
+\f2
+w pozyskiwane s\f3
+\'b9
+\f2
+ z ID3 tag\f3
+\'f3
+\f2
+w plik\f3
+\'f3
+\f2
+w mp3. Je\f3
+\'bf
+\f2
+eli takich tag\f3
+\'f3
+\f2
+w brakuje to zale\f3
+\'bf
+\f2
+nie od ustawie\f3
+\'f1
+\f2
+ programu u\f3
+\'bf
+\f2
+ywane s\f3
+\'b9
+\f2
+ znaki zapytania b\f3
+\'b9
+\f2
+d\f3
+\'9f
+\f2
+ informacje ze \f3
+\'9c
+\f2
+cie\f3
+\'bf
+\f2
+ki dost\f3
+\'ea
+\f2
+pu do pliku, wed\f3
+\'b3
+\f2
+ug wzoru \i
+wykonawca\\album\\nazwa_utworu.mp3\i0
+.\par
+\cf1
+\f1
+\par
+
+\page
+
+#{\footnote 6}
+\keepn\b0\i0\cf0
+\lang1045
+\b
+\i
+\f2
+\fs28
+Wyszukiwanie danych\b0
+\i0
+\f1
+\fs20
+\par
+\pard
+\b0\i0
+\f2
+\fs20
+\par
+Wyszukiwanie danych obywa sie w Katalogusie na dwa sposoby. U\f3
+\'bf
+\f2
+ytkownik mo\f3
+\'bf
+\f2
+e wyszuka\f3
+\'e6
+\f2
+elementy ze wzgl\f3
+\'ea
+\f2
+du na nazw\f3
+\'ea
+\f2
+ lub ze wzgl\f3
+\'ea
+\f2
+du na no\f3
+\'9c
+\f2
+nik. Oba typy r\f3
+\'f3
+\'bf
+\f2
+ni\f3
+\'b9
+\f2
+ si\f3
+\'ea
+\f2
+ nieco mi\f3
+\'ea
+\f2
+dzy sob\f3
+\'b9
+\f2
+, wi\f3
+\'ea
+\f2
+c zostan\f3
+\'b9
+\f2
+ opisane osobno.\par
+\par
+\b
+Wyszukiwanie ze wzgl\f3
+\'ea
+\f2
+du na nazw\f3
+\'ea
+\b0
+\f2
+\par
+Aby wywo\f3
+\'b3
+\f2
+a\f3
+\'e6
+\f2
+ ten typ wyszukiwania z menu g\f3
+\'b3
+\'f3
+\f2
+wnego nale\f3
+\'bf
+\f2
+y wybra\f3
+\'e6
+\f2
+ \i
+Wyszukaj->Szukaj wed\f3
+\'b3
+\f2
+ug nazw\i0
+. Po podaniu szukanej frazy program rozpocznie wyszukiwanie element\f3
+\'f3
+\f2
+w, kt\f3
+\'f3
+\f2
+rych nazwa jest taka sama b\f3
+\'b9
+\f2
+d\f3
+\'9f
+\f2
+ rozpoczyna si\f3
+\'ea
+\f2
+ tak samo jak wpisana fraza, np. po wpisaniu frazy Metal w wynikach znajdzie si\f3
+\'ea
+\f2
+ zar\f3
+\'f3
+\f2
+wno element o nazwie Metal jak i Metallica\f3
+ \f2
+oraz Metal Church. Algorytm wyszukuj\f3
+\'b9
+\f2
+cy nie zwraca uwagi na wielkie litery. Taki sam efekt zostanie uzyskany po wpisaniu METAL, metal, czy Metal.\par
+\par
+\b
+Wyszukiwanie ze wzgl\f3
+\'ea
+\f2
+du na no\f3
+\'9c
+\f2
+nik\b0
+\par
+Aby wywo\f3
+\'b3
+\f2
+a\f3
+\'e6
+\f2
+ ten typ wyszukiwania nale\f3
+\'bf
+\f2
+y z menu g\f3
+\'b3
+\'f3
+\f2
+wnego wybra\f3
+\'e6
+\f2
+ \i
+Wyszukaj->Szukaj wed\f3
+\'b3
+\f2
+ug no\f3
+\'9c
+\f2
+nik\f3
+\'f3
+\f2
+w\i0
+. Po podaniu szukanej frazy program rozpocznie wyszukiwanieelement\f3
+\'f3
+\f2
+w, kt\f3
+\'f3
+\f2
+rych no\f3
+\'9c
+\f2
+nik jest dok\f3
+\'b3
+\f2
+adnie taki sam, jak wpisana fraza, np. po wpisaniu frazy cd1 w wynikach znajd\f3
+\'b9
+\f2
+ si\f3
+\'ea
+\f2
+ tylko elementy, kt\f3
+\'f3
+\f2
+rych no\f3
+\'9c
+\f2
+nik oznaczony jest jako cd1, a nie cd11. Algorytm wyszukuj\f3
+\'b9
+\f2
+cy nie zwraca uwagi na wielkie litery. Taki sam efekt zostanie uzyskany po wpisaniu CD1, cd1, cD1 b\f3
+\'b9
+\f2
+d\f3
+\'9f
+\f2
+ Cd1.\par
+\par
+\b
+Opcje wyszukiwania\b0
+\par
+\i
+Szukaj w wykonawcach\i0
+ - w wynikach uwzgl\f3
+\'ea
+\f2
+dnieni zostan\f3
+\'b9
+\f2
+ wykonawcy.\par
+\i
+Szukaj w albumach\i0
+ - w wynikach zostan\f3
+\'b9
+\f2
+ uwzgl\f3
+\'ea
+\f2
+dnione albumy.\par
+\i
+Szukaj w utworach\i0
+ - w utworach zostan\f3
+\'b9
+\f2
+ uwzgl\f3
+\'ea
+\f2
+dnione utwory.\cf1
+\f1
+\par
+
+\page
+
+#{\footnote 7}
+\keepn\b0\i0\cf0
+\lang1045
+\b
+\i
+\f2
+\fs28
+Tworzenie raportu\b0
+\i0
+\f1
+\fs20
+\par
+\pard
+\b0\i0
+\f2
+\fs20
+\par
+Abu utworzy\f3
+\'e6
+\f2
+ raport z g\f3
+\'b3
+\'f3
+\f2
+wnego menu nale\f3
+\'bf
+\f2
+y wybra\f3
+\'e6
+\f2
+ \i
+Narz\f3
+\'ea
+\f2
+dzia->Raport\i0
+. Spowoduje to uruchomienie czterokrokowego kreatora raport\f3
+\'f3
+\f2
+w.\par
+\par
+\b
+Krok 1\b0
+\par
+W tym kroku nale\f3
+\'bf
+\f2
+y ustali\f3
+\'e6
+\f2
+, jakie czcionki zostan\f3
+\'b9
+\f2
+ u\f3
+\'bf
+\f2
+yte do wy\f3
+\'9c
+\f2
+wietlenia danych raportu. W raporcie u\f3
+\'bf
+\f2
+ywanych jest pi\f3
+\'ea
+\'e6
+\f2
+ czcionek: czcionka nag\f3
+\'b3
+\'f3
+\f2
+wka raportu, czcionka nag\f3
+\'b3
+\'f3
+\f2
+wk\f3
+\'f3
+\f2
+w kolumn, czcionka danych pierwszego poziomu, czcionka danych drugiego poziomu, czcionka danych trzeciego poziomu oraz czcionka stopki raportu.\par
+\par
+\b
+Krok 2\b0
+\par
+W tym kroku nale\f3
+\'bf
+\f2
+y ustali\f3
+\'e6
+\f2
+ jakie pola maj\f3
+\'b9
+\f2
+ zosta\f3
+\'e6
+\f2
+ wy\f3
+\'9c
+\f2
+wietlone w raporcie. W rubryce \i
+Dost\f3
+\'ea
+\f2
+pne pola\f3
+ \i0
+\f2
+widoczne s\f3
+\'b9
+\f2
+ pola, jakie mo\f3
+\'bf
+\f2
+na wybra\f3
+\'e6
+\f2
+. W rubryce \i
+Wybrane pola\i0
+ widniej\f3
+\'b9
+\f2
+ pola ju\f3
+\'bf
+\f2
+ wybrane. Pola wybiera si\f3
+\'ea
+\f2
+ poprzez zaznaczenie konkretnego pola w oknie \i
+Dost\f3
+\'ea
+\f2
+pne pola\i0
+ i klikni\f3
+\'ea
+\f2
+cie przycisku \i
+>\i0
+. Aby usun\f3
+\'b9
+\'e6
+\f2
+ pole nale\f3
+\'bf
+\f2
+y zaznaczy\f3
+\'e6
+\f2
+ konkretne pole w oknie \i
+Wybrane pola\i0
+ i klikn\f3
+\'b9
+\'e6
+\f2
+ przycisk <. Uwaga! Aby raport zosta\f3
+\'b3
+\f2
+ utworzony nale\f3
+\'bf
+\f2
+y wybra\f3
+\'e6
+\f2
+ co najmniej jedno, ale nie wi\f3
+\'ea
+\f2
+cej ni\f3
+\'bf
+\f2
+ trzy pola.\par
+\par
+W kroku 2 nale\f3
+\'bf
+\f2
+y wybra\f3
+\'e6
+\f2
+ tak\f3
+\'bf
+\f2
+e orientacj\f3
+\'ea
+\f2
+ danych w raporcie. Do wyboru jest uk\f3
+\'b3
+\f2
+ad tabelaryczny i kaskadowy. Je\f3
+\'bf
+\f2
+eli uk\f3
+\'b3
+\f2
+ad pierwszego poziomu jest tabelaryczny, to do ka\f3
+\'bf
+\f2
+dego elementu drugiego poziomu zostanie dopisany element pierwszego poziomu. Je\f3
+\'bf
+\f2
+eli uk\f3
+\'b3
+\f2
+ad ten jest kaskadowy, do tylko do pierwszego elementu drugiego poziomu w danej grupie zostanie dopisany element pierwszego poziomu. Analogiczne przedstawia si\f3
+\'ea
+\f2
+ sytuacja z uk\f3
+\'b3
+\f2
+adem drugiego poziomu.\par
+\par
+Przyk\f3
+\'b3
+\f2
+adowy uk\f3
+\'b3
+\f2
+ad tabelaryczny (pierwszego i drugiego poziomu)\par
+\par
+\cf2
+
+
+\{bmc report1.bmp\}
+\cf1
+
+ 
+\par
+\par
+Przyk\f3
+\'b3
+\f2
+adowy uk\f3
+\'b3
+\f2
+ad kaskadowy (pierwszego i drugiego poziomu)\par
+\par
+\cf2
+
+
+\{bmc report2.bmp\}
+\cf1
+
+ 
+\par
+\par
+\b
+Krok 3\b0
+\par
+W kroku tym nale\f3
+\'bf
+\f2
+y poda\f3
+\'e6
+\f2
+ nag\f3
+\'b3
+\'f3
+\f2
+wki dla kolejnych p\f3
+\'f3
+\f2
+l w raporcie. Nag\f3
+\'b3
+\'f3
+\f2
+wki te zostan\f3
+\'b9
+\f2
+ wy\f3
+\'9c
+\f2
+wietlone ponad danymi kolejnych stopniczcionk\f3
+\'b9
+\f2
+ zdefiniowan\f3
+\'b9
+\f2
+ jako czcionka nag\f3
+\'b3
+\'f3
+\f2
+wk\f3
+\'f3
+\f2
+w kolumn.\par
+\par
+\b
+Krok 4\b0
+\par
+W kroku nale\f3
+\'bf
+\f2
+y zaznaczy\f3
+\'e6
+\f2
+ dodatkowe opcje raportu, takie jak pozostawianie pustej linii mi\f3
+\'ea
+\f2
+dzy danymi pierwszego poziomu b\f3
+\'b9
+\f2
+d\f3
+\'9f
+\f2
+ znaki przystankowe.\par
+\par
+Po klikni\f3
+\'ea
+\f2
+ciu przycisku \i
+Zako\f3
+\'f1
+\f2
+cz\i0
+ uka\f3
+\'bf
+\f2
+e si\f3
+\'ea
+\f2
+ okno dialogowe z pro\f3
+\'9c
+\f2
+b\f3
+\'b9
+\f2
+ o wybranie pliku raportu. Po klikni\f3
+\'ea
+\f2
+ciu \i
+Zapisz\i0
+ zostanie utworzony nowy plik HTML zawieraj\f3
+\'b9
+\f2
+cy gotowy raport.\par
+\cf1
+\f1
+\par
+
+\page
+
+#{\footnote 8}
+\keepn\b0\i0\cf0
+\lang1045
+\b
+\i
+\f2
+\fs28
+Opcje programu\b0
+\i0
+\f1
+\fs20
+\par
+\pard
+\b0\i0
+\b
+\fs20
+\par
+Opcje og\f4
+\'f3
+\f0
+lne\b0
+\par
+\i
+Grupowo dodawaj nowych wykonawc\f4
+\'f3
+\f0
+w\f4
+ \i0
+\f0
+- zaznaczenie tej opcji spowoduje grupowe dodawanie wykonawc\f4
+\'f3
+\f0
+w.\par
+\par
+\i
+Grupowo dodawaj nowe albumy\f4
+ \i0
+\f0
+- zaznaczenie tej opcji spowoduje grupowe dodawanie album\f4
+\'f3
+\f0
+w.\par
+\par
+\i
+Grupowo dodawaj nowe utwory\f4
+ \i0
+\f0
+- zaznaczenie tej opcji spowoduje grupowe dodawanie utwor\f4
+\'f3
+\f0
+w.\par
+\par
+\i
+Pobierz nazw\f4
+\'ea
+\f0
+ wykonawcy ze \f4
+\'9c
+\f0
+cie\f4
+\'bf
+\f0
+ki przy pustym ID3\f4
+ \i0
+\f0
+- zaznaczenie tej opcji spowoduje pobieranie danych o wykonawcy ze \f4
+\'9c
+\f0
+cie\f4
+\'bf
+\f0
+ki dost\f4
+\'ea
+\f0
+pu do pliku, je\f4
+\'bf
+\f0
+eli ID3 Tag jest pusty.\par
+\par
+\i
+Pobierz nazw\f4
+\'ea
+\f0
+ albumu ze \f4
+\'9c
+\f0
+cie\f4
+\'bf
+\f0
+ki przy pustym ID3\f4
+ \i0
+\f0
+- zaznaczenie tej opcji spowoduje pobieranie danych o albumie ze \f4
+\'9c
+\f0
+cie\f4
+\'bf
+\f0
+ki dost\f4
+\'ea
+\f0
+pu do pliku, je\f4
+\'bf
+\f0
+eli ID3 Tag jest pusty.\par
+\par
+\i
+Pobierz tytu\f4
+\'b3
+\f0
+ utworu ze \f4
+\'9c
+\f0
+cie\f4
+\'bf
+\f0
+ki przy pustym ID3\f4
+ \i0
+\f0
+- zaznaczenie tej opcji spowoduje pobieranie danych o utworze ze \f4
+\'9c
+\f0
+cie\f4
+\'bf
+\f0
+ki dost\f4
+\'ea
+\f0
+pu do pliku, je\f4
+\'bf
+\f0
+eli ID3 Tag jest pusty.\par
+\par
+\i
+Ostrzegaj przed dodaniem pozycji o nazwie ju\f4
+\'bf
+\f0
+ istniej\f4
+\'b9
+\f0
+cej\i0
+ - zaznaczenie tej opcji spowoduje wy\f4
+\'9c
+\f0
+wietlenia okienka z ostrze\f4
+\'bf
+\f0
+eniem przy pr\f4
+\'f3
+\f0
+bie dodania pozycji o nazwie ju\f4
+\'bf
+\f0
+ istniej\f4
+\'b9
+\f0
+cej.\par
+\par
+\i
+Pokazuj dymek z opisem, gdy kursor znajduje si\f4
+\'ea
+\f0
+ ponad pozycj\f4
+\'b9
+\i0
+\f0
+ - zaznaczenie tej opcji uaktywni dymek z opisem elementu, je\f4
+\'bf
+\f0
+eli ponad pozycj\f4
+\'b9
+\f0
+ kursor b\f4
+\'ea
+\f0
+dzie znajdowa\f4
+\'b3
+\f0
+ si\f4
+\'ea
+\f0
+ co najmniej p\f4
+\'f3
+\'b3
+\f0
+torej sekundy,\par
+\par
+\i
+Pokazuj siatk\f4
+\'ea
+\f0
+ w oknie bazy danych\i0
+ - zaznaczenie tej opcji uaktywni siatk\f4
+\'ea
+\f0
+ w oknie bazy danych\par
+\par
+\i
+Zapami\f4
+\'ea
+\f0
+taj rozmiar i pozycj\f4
+\'ea
+\f0
+ okna\i0
+ - zaznaczenie tej opcji uruchomi mechanizm zapisuj\f4
+\'b9
+\f0
+cy rozmiar oraz pozycj\f4
+\'ea
+\f0
+ okna po zamkni\f4
+\'ea
+\f0
+ciu programu i  przywracaj\f4
+\'b9
+\f0
+cy zapisane parametry po ponownym uruchomieniu programu.\par
+\par
+\b
+Opcje wizualne\b0
+\par
+Opcje te umo\f4
+\'bf
+\f0
+liwiaj\f4
+\'b9
+\f0
+ ustawienie koloru t\f4
+\'b3
+\f0
+a oraz parametr\f4
+\'f3
+\f0
+w czcionki dla okna bazy danych i dymka z komentarzem. Po klikni\f4
+\'ea
+\f0
+ciu na dany kolor b\f4
+\'b9
+\f0
+d\f4
+\'9f
+\f0
+ czcionk\f4
+\'ea
+\f0
+ wy\f4
+\'9c
+\f0
+wietli si\f4
+\'ea
+\f0
+ okno umo\f4
+\'bf
+\f0
+liwiaj\f4
+\'b9
+\f0
+ce wyb\f4
+\'f3
+\f0
+r innego koloru lub czcionki.\par
+\par
+\b
+Opcje bezpiecze\f4
+\'f1
+\f0
+stwa\b0
+\par
+Opcje bezpiecze\f4
+\'f1
+\f0
+stwa umo\f4
+\'bf
+\f0
+liwiaj\f4
+\'b9
+\f0
+ ustawienie has\f4
+\'b3
+\f0
+a dla aktualnie aktywnej bazy danych. Has\f4
+\'b3
+\f0
+o jest szyfrowane i zapisywane w pliku razem z baz\f4
+\'b9
+\f0
+ danych. Je\f4
+\'bf
+\f0
+eli zostanie ustawione has\f4
+\'b3
+\f0
+o, to przed wczytaniem bazy danych, dla kt\f4
+\'f3
+\f0
+rej has\f4
+\'b3
+\f0
+o zosta\f4
+\'b3
+\f0
+o ustawione, uka\f4
+\'bf
+\f0
+e si\f4
+\'ea
+\f0
+ okno z pro\f4
+\'9c
+\f0
+b\f4
+\'b9
+\f0
+ o podanie has\f4
+\'b3
+\f0
+a. Je\f4
+\'bf
+\f0
+eli prawid\f4
+\'b3
+\f0
+owe has\f4
+\'b3
+\f0
+o nie zostanie podane plik bazy danych nie b\f4
+\'ea
+\f0
+dzie m\f4
+\'f3
+\f0
+g\f4
+\'b3
+\f0
+ zosta\f4
+\'e6
+\f0
+ wczytany.\par
+\cf1
+\par
+
+\page
+
+#{\footnote 9}
+\keepn\b0\i0\cf0
+\lang1045
+\b
+\i
+\f2
+\fs28
+Wyb\f3
+\'f3
+\f2
+r j\f3
+\'ea
+\f2
+zyka\b0
+\i0
+\f1
+\fs20
+\par
+\pard
+\b0\i0
+\f2
+\fs20
+\par
+Aby wybra\f3
+\'e6
+\f2
+ wersj\f3
+\'ea
+\f2
+ j\f3
+\'ea
+\f2
+zykow\f3
+\'b9
+\f2
+ interfejsu w menu \i
+Narz\f3
+\'ea
+\f2
+dzia->J\f3
+\'ea
+\f2
+zyk\i0
+ nale\f3
+\'bf
+\f2
+y zaznaczy\f3
+\'e6
+\f2
+ j\f3
+\'ea
+\f2
+zyk, w kt\f3
+\'f3
+\f2
+rym ma zosta\f3
+\'e6
+\f2
+ wy\f3
+\'9c
+\f2
+wietlony interfejs programu. Aby stworzy\f3
+\'e6
+\f2
+ w\f3
+\'b3
+\f2
+asny plik j\f3
+\'ea
+\f2
+zykowy nale\f3
+\'bf
+\f2
+y uruchomi\f3
+\'e6
+\f2
+ Menad\f3
+\'bf
+\f2
+er t\f3
+\'b3
+\f2
+umacze\f3
+\'f1
+\f2
+ z g\f3
+\'b3
+\'f3
+\f2
+wnego menu wybieraj\f3
+\'b9
+\f2
+c \i
+Narz\f3
+\'ea
+\f2
+dzia->Menad\f3
+\'bf
+\f2
+er t\f3
+\'b3
+\f2
+umacze\f3
+\'f1
+\i0
+\f2
+.\cf1
+\f1
+\par
+
+\page
+
+}

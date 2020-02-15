@@ -1,0 +1,11 @@
+[OPTIONS]
+COMPRESS=12 Hall Zeck
+CNT=.\manager.cnt
+HLP=.\manager.hlp
+
+[FILES]
+.\manager.jrt
+
+[MAP]
+[WINDOWS]
+Main="",(0,0,600,400),,(r16777215),(r16777215),

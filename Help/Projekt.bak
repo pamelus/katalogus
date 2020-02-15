@@ -1,0 +1,297 @@
+JBHFILEVERSION
+3
+katalogus
+16777215
+16777215
+0
+0
+600
+600
+0
+9
+Do czego s³u¿y Katalogus 3.2
+
+
+
+
+5
+{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil Arial;}{\f1\fswiss\fprq2\fcharset0 Arial;}{\f2\fswiss\fprq2\fcharset238{\*\fname Arial;}Arial CE;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 
+\par \cf0\f1 Katalogus 3.2 jest programem s\f2\'b3\f1 u\f2\'bf\'b9\f1 cym do katalogowania zbior\f2\'f3\f1 w muzycznych znajduj\f2\'b9\f1 cych si\f2\'ea\f1  w plikach mp3 (cho\f2\'e6\f1  nie tylko). Aplikacja jest szczeg\f2\'f3\f1 lnie przydatna dla os\f2\'f3\f1 b, kt\f2\'f3\f1 re pliki muzyczne przechowuj\f2\'b9\f1  na wielu r\f2\'f3\'bf\f1 nych dyskach czy te\f2\'bf\f1  p\f2\'b3\f1 ytach CD. Tym u\f2\'bf\f1 ytkownikom Katalogus pomo\f2\'bf\f1 e zorientowa\f2\'e6\f1  si\f2\'ea\f1 , na kt\f2\'f3\f1 rym CD znajduje si\f2\'ea\f1  dany utw\f2\'f3\f1 r b\f2\'b9\f1 d\f2\'9f\f1  album. Dodatkowo program samodzielnie przeszuka dany dysk CD automatycznie dodaj\f2\'b9\f1 c do bazy danych wszystkich wykonawc\f2\'f3\f1 w, albumy i utwory znajduj\f2\'b9\f1 ce si\f2\'ea\f1  na no\f2\'9c\f1 niku.\cf1\f0 
+\par }
+3
+{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fswiss\fprq2\fcharset0 Arial;}{\f1\fswiss\fprq2\fcharset238{\*\fname Arial;}Arial CE;}{\f2\fnil Arial;}}
+\viewkind4\uc1\pard\lang1045\b\i\f0\fs28 Do czego s\f1\'b3\f0 u\f1\'bf\f0 y Katalogus 3.2\b0\i0\f2\fs20 
+\par }
+0
+0
+Licencja komercyjna
+
+
+
+
+5
+{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fswiss\fprq2\fcharset0 Arial;}{\f1\fswiss\fprq2\fcharset238{\*\fname Arial;}Arial CE;}{\f2\fnil Arial;}}
+{\colortbl ;\red0\green128\blue0;\red0\green0\blue128;\red0\green0\blue0;}
+\viewkind4\uc1\pard\f0\fs20 
+\par Katalogus 3.2 jest programem dost\f1\'ea\f0 pnym na licencji FREEWARE jedynie do cel\f1\'f3\f0 w niekomercyjnych. Obecnie nie widz\f1\'ea\f0  sposobu komercyjnego wykorzystania aplikacji (no chyba \f1\'bf\f0 e jeste\f1\'9c\f0  piratem i sprzedajesz nielegaln\f1\'b9\f0  muzyk\f1\'ea\f0  - ale czy wtedy b\f1\'ea\f0 dziesz zawraca\f1\'b3\f0  sobie g\f1\'b3\f0 ow\f1\'ea\f0  licencj\f1\'b9\f0 ?). Gdyby jednak\f1\'bf\f0 e kto\f1\'9c\f0  chcia\f1\'b3\f0  wykorzysta\f1\'e6\f0  program w celach komercyjnych  prosz\f1\'ea\f0  o kontakt pod adresem e-mail: \cf1\lang1033\ul\protect ##pamelus86@yahoo.co.uk##\cf2\ulnone  \cf0\lang1045\protect0 . Potencjalnych kupc\f1\'f3\f0 w uprzedzam, \f1\'bf\f0 e nie udzielam \f1\'bf\f0 adnych gwarancji, pomocy technicznej ani innych tego typu dupereli. Korzystacie na w\f1\'b3\f0 asn\f1\'b9\f0  odpowiedzialno\f1\'9c\'e6\f0 !\cf3\f2 
+\par }
+3
+{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fswiss\fprq2\fcharset0 Arial;}{\f1\fnil Arial;}}
+\viewkind4\uc1\pard\lang1045\b\i\f0\fs28 Licencja komercyjna\b0\i0\f1\fs20 
+\par }
+1
+pamelus86@yahoo.co.uk
+2
+pamelus86@yahoo.co.uk
+pamelus86@yahoo.co.uk
+FALSE
+0
+Historia programu
+
+
+
+
+22
+{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fswiss\fprq2\fcharset0 Arial;}{\f1\fswiss\fprq2\fcharset238{\*\fname Arial;}Arial CE;}{\f2\fnil Arial;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\f0\fs20 
+\par Idea stworzenia Katalogusa zrodzi\f1\'b3\f0 a si\f1\'ea\f0  na pocz\f1\'b9\f0 tku 2003 roku. Dopiero zaczyna\f1\'b3\f0 em wtedy programowa\f1\'e6\f0  w c++, wi\f1\'ea\f0 c Katalogus 1.0 by\f1\'b3\f0  aplikacj\f1\'b9\f0  konsolow\f1\'b9\f0 . Obs\f1\'b3\f0 ugiwa\f1\'b3\f0  maksymalnie dwudziestu wykonawc\f1\'f3\f0 w, z kt\f1\'f3\f0 rych ka\f1\'bf\f0 dy m\f1\'f3\f0 g\f1\'b3\f0  mie\f1\'e6\f0  po dwadzie\f1\'9c\f0 cia album\f1\'f3\f0 w i dwadzie\f1\'9c\f0 cia utwor\f1\'f3\f0 w. Ale za to by\f1\'b3\f0  nad podziw stabilny. Niestety zar\f1\'f3\f0 wno kod \f1\'9f\f0 r\f1\'f3\f0 d\f1\'b3\f0 owy jak i pliki wykonywalne pierwszej wersji Katalogusa zagin\f1\'ea\'b3\f0 y gdzie\f1\'9c\f0  w zawierusze dziej\f1\'f3\f0 w, prawdopodobnie podczas formatowania dysku.
+\par 
+\par Par\f1\'ea\f0  miesi\f1\'ea\f0 cy p\f1\'f3\'9f\f0 niej odkry\f1\'b3\f0 em tajniki programowania pod Windows (WinAPI) i postanowi\f1\'b3\f0 em stworzy\f1\'e6\f0  wersj\f1\'ea\f0  okienkow\f1\'b9\f0  mojego programu. Wersja 2.0 mia\f1\'b3\f0 a obrzydliwy interfejs i wiesza\f1\'b3\f0 a si\f1\'ea\f0  r\f1\'f3\f0 wnie cz\f1\'ea\f0 sto, co pierwsze wersje okienek. Dodatkowo nigdy tak na prawd\f1\'ea\f0  nie zosta\f1\'b3\f0 a uko\f1\'f1\f0 czona. Wersja 2.1 odziedziczy\f1\'b3\f0 a interfejs po poprzedniczce i wiesza\f1\'b3\f0 a si\f1\'ea\f0  ju\f1\'bf\f0  mniej, ale nadal zbyt cz\f1\'ea\f0 sto. Obie wersje rozszerzy\f1\'b3\f0 y mo\f1\'bf\f0 liwo\f1\'9c\f0 ci bazy danych do przechowywania dwustu wykonawc\f1\'f3\f0 w, siedemdziesi\f1\'ea\f0 ciu pi\f1\'ea\f0 ciu album\f1\'f3\f0 w dla ka\f1\'bf\f0 dego wykonawcy, oraz siedemdziesi\f1\'ea\f0 ciu pi\f1\'ea\f0 ciu utwor\f1\'f3\f0 w dla ka\f1\'bf\f0 dego albumu. Niestety te wersje r\f1\'f3\f0 wnie\f1\'bf\f0  zagin\f1\'ea\'b3\f0 y.
+\par 
+\par Min\f1\'ea\'b3\f0 o kolejnych kilka miesi\f1\'ea\f0 cy. Nauczy\f1\'b3\f0 em si\f1\'ea\f0  ju\f1\'bf\f0  porz\f1\'b9\f0 dnie programowa\f1\'e6\f0 . W kwietniu 2004 roku powsta\f1\'b3\f0  wi\f1\'ea\f0 c Katalogus 3.0 - a w\f1\'b3\f0 a\f1\'9c\f0 ciwie powstawa\f1\'b3\f0 , bo b\f1\'ea\f0 d\f1\'b9\f0 c mniej wi\f1\'ea\f0 cej w po\f1\'b3\f0 owie procesu   tworzenia wy\f1\'b3\f0 apa\f1\'b3\f0 em zbyt du\f1\'bf\f0 o b\f1\'b3\'ea\f0 d\f1\'f3\f0 w i niedoci\f1\'b9\f0 gni\f1\'ea\'e6\f0  (pozosta\f1\'b3\f0 o\f1\'9c\'e6\f0  po poprzednich wersjach) i postanowi\f1\'b3\f0 em rozpocz\f1\'b9\'e6\f0  pisanie od zera. Zaprojektowa\f1\'b3\f0 em now\f1\'b9\f0  baz\f1\'ea\f0  danych obs\f1\'b3\f0 uguj\f1\'b9\f0 c\f1\'b9\f0  niesko\f1\'f1\f0 czon\f1\'b9\f0  liczb\f1\'ea\f0   wykonawc\f1\'f3\f0 w, album\f1\'f3\f0 w i utwor\f1\'f3\f0 w (ograniczon\f1\'b9\f0  jedynie przez pami\f1\'ea\'e6\f0  komputera) i przyjazny dla oka interfejs. Ale ta wersja r\f1\'f3\f0 wnie\f1\'bf\f0  nie zosta\f1\'b3\f0 a uko\f1\'f1\f0 czona (cho\f1\'e6\f0  by\f1\'b3\f0 o blisko i dzi\f1\'9c\f0  Katalogus 3.1 jest praktycznie w pe\f1\'b3\f0 ni dzia\f1\'b3\f0 aj\f1\'b9\f0 c\f1\'b9\f0  aplikacj\f1\'b9\f0 ). W moim chorym umy\f1\'9c\f0 le zrodzi\f1\'b3\f0  si\f1\'ea\f0  pomys\f1\'b3\f0  przeniesienia Katalogusa w \f1\'9c\f0 wiat MDI i sta\f1\'b3\f0 o si\f1\'ea\f0 . Powsta\f1\'b3\f0  Katalogus 3.2, kt\f1\'f3\f0 ry teraz znajduje si\f1\'ea\f0  na twoim dysku twardym, ze standardowym interfejsem, spor\f1\'b9\f0  liczb\f1\'b9\f0  opcji i innymi bajerami. Mo\f1\'bf\f0 e kiedy\f1\'9c\f0  powstanie wersja 4.0? Po\f1\'bf\f0 yjemy zobaczymy - teraz ma\f1\'b3\f0 y histogram.
+\par 
+\par 1.0 - konsolowy badziew totalny. dwudziestu wykonawc\f1\'f3\f0 w, dwadzie\f1\'9c\f0 cia album\f1\'f3\f0 w dwadzie\f1\'9c\f0 cia utwor\f1\'f3\f0 w. \f1\'af\f0 adnego wyszukiwania, ustawie\f1\'f1\f0 , pomocy, nic. Ale tak w\f1\'b3\f0 a\f1\'9c\f0 nie si\f1\'ea\f0  zacz\f1\'ea\'b3\f0 o.
+\par 
+\par 2.0 - dodane ustawienia (ale bardzo ubogie), prosty algorytm wyszukiwania i bardzo powolny sortowania. Interfejs oparty na prostej li\f1\'9c\f0 cie i kilku oknach pomocniczych. Dwustu wykonawc\f1\'f3\f0 w, siedemdziesi\f1\'b9\f0 t pi\f1\'ea\'e6\f0  album\f1\'f3\f0 w, siedemdziesi\f1\'b9\f0 t pi\f1\'ea\'e6\f0  utwor\f1\'f3\f0 w. Nigdy nie uko\f1\'f1\f0 czona wiesza\f1\'b3\f0 a si\f1\'ea\f0  cz\f1\'ea\'9c\f0 ciej ni\f1\'bf\f0  Windows 95.
+\par 
+\par 2.1 - uko\f1\'f1\f0 czona i poprawiona wersja poprzedniczki, ale r\f1\'f3\f0 wnie\f1\'bf\f0  zbyt cz\f1\'ea\f0 sto si\f1\'ea\f0  wiesza\f1\'b3\f0 a. Innych udoskonale\f1\'f1\f0  brak.
+\par 
+\par 3.0 - pierwszy Katalogus z prawdziwego zdarzenia, ale uko\f1\'f1\f0 czony tylko do po\f1\'b3\f0 owy. Obs\f1\'b3\f0 ugiwa\f1\'b3\f0   tysi\f1\'b9\f0 c dwudziestu czterech wykonawc\f1\'f3\f0 w, tyle\f1\'bf\f0  album\f1\'f3\f0 w dla ka\f1\'bf\f0 dego wykonawcy i utwor\f1\'f3\f0 w dla albumu.
+\par 
+\par 3.1 - niemal\f1\'bf\f0 e uko\f1\'f1\f0 czony. Obs\f1\'b3\f0 ugiwa\f1\'b3\f0  niesko\f1\'f1\f0 czon\f1\'b9\f0  liczb\f1\'ea\f0  wykonawc\f1\'f3\f0 w, album\f1\'f3\f0 w i utwor\f1\'f3\f0 w. Potrafi\f1\'b3\f0  skanowa\f1\'e6\f0  dysk (cho\f1\'e6\f0  nie czyta\f1\'b3\f0  ID3 tag\f1\'f3\f0 w) i posiada\f1\'b3\f0  du\f1\'bf\'b9\f0  liczb\f1\'ea\f0  opcji. Umo\f1\'bf\f0 liwia\f1\'b3\f0  zabezpieczenie bazy danych has\f1\'b3\f0 em, kt\f1\'f3\f0 re nie by\f1\'b3\f0 o szyfrowane i ka\f1\'bf\f0 dy kto umia\f1\'b3\f0  otworzy\f1\'e6\f0  plik bazy danych notatnikiem m\f1\'f3\f0 g\f1\'b3\f0  je sobie przeczyta\f1\'e6\f0  - baza danych by\f1\'b3\f0 a plikiem tekstowym, a has\f1\'b3\f0 o znajdowa\f1\'b3\f0 o si\f1\'ea\f0  na samej g\f1\'f3\f0 rze.
+\par 
+\par 3.2 - to w\f1\'b3\f0 a\f1\'9c\f0 nie z niego korzystasz. Zapisuje pliki binarnie, szyfruje has\f1\'b3\f0 o i ma zaimplementowany naprawd\f1\'ea\f0  szybki algorytm sortowania (ok. 1000x szybszy od tego z poprzedniej wersji). Umo\f1\'bf\f0 liwia wygenerowanie statystyki oraz raportu (plik HTML).
+\par \cf1\f2 
+\par }
+3
+{\rtf1\ansi\deff0{\fonttbl{\f0\fswiss\fprq2\fcharset0 Arial;}{\f1\fnil Arial;}}
+\viewkind4\uc1\pard\lang1045\b\i\f0\fs28 Historia programu\b0\i0\f1\fs20 
+\par }
+0
+0
+O autorze i podziêkowania
+
+
+
+
+11
+{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fswiss\fprq2\fcharset0 Arial;}{\f1\fswiss\fprq2\fcharset238{\*\fname Arial;}Arial CE;}{\f2\fnil Arial;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\f0\fs20 
+\par Jedynym i wy\f1\'b3\'b9\f0 cznym autorem programu Katalogus 3.2 jest Patryk Koz\f1\'b3\f0 owski, pa\f1\'9f\f0 dziernik 2004.
+\par Autor chcia\f1\'b3\f0 by podzi\f1\'ea\f0 kowa\f1\'e6\f0  wszystkim osobom, kt\f1\'f3\f0 re w jakikolwiek spos\f1\'f3\f0 b przyczyni\f1\'b3\f0 y si\f1\'ea\f0  do powstania programu. W szczeg\f1\'f3\f0 lno\f1\'9c\f0 ci s\f1\'b9\f0  to (kolejno\f1\'9c\'e6\f0  alfabetyczna):
+\par  - Robert Flasi\f1\'f1\f0 ski
+\par  - Tomek Koz\f1\'b3\f0 owski
+\par  - Gra\f1\'bf\f0 yna Koz\f1\'b3\f0 owska
+\par  - Micha\f1\'b3\f0  Scheffs
+\par  - Radek Sobieszczyk\cf1\f2 
+\par }
+3
+{\rtf1\ansi\deff0{\fonttbl{\f0\fswiss\fprq2\fcharset0 Arial;}{\f1\fswiss\fprq2\fcharset238{\*\fname Arial;}Arial CE;}{\f2\fnil Arial;}}
+\viewkind4\uc1\pard\lang1045\b\i\f0\fs28 O autorze i podzi\f1\'ea\f0 kowania\b0\i0\f2\fs20 
+\par }
+0
+0
+Interfejs
+
+
+
+
+35
+{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fswiss\fprq2\fcharset0 Arial;}{\f1\fswiss\fprq2\fcharset238{\*\fname Arial;}Arial CE;}{\f2\fnil Arial;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\f0\fs20 
+\par Interfejs programu mo\f1\'bf\f0 na podzieli\f1\'e6\f0  na kilka sekcji.
+\par 
+\par \b Menu g\f1\'b3\'f3\f0 wne\b0 
+\par To tutaj przede wszystkim wydawane s\f1\'b9\f0  komendy. Menu zachowuje si\f1\'ea\f0  tak samo, jak w ka\f1\'bf\f0 dym innym programie.
+\par 
+\par \b Pasek narz\f1\'ea\f0 dzi\b0 
+\par Zawiera przyciski wywo\f1\'b3\f0 uj\f1\'b9\f0 ce najcz\f1\'ea\'9c\f0 ciej u\f1\'bf\f0 ywane w programie komendy. Dzi\f1\'ea\f0 ki temu nie trzeba ci\f1\'b9\f0 gle przekopywa\f1\'e6\f0  si\f1\'ea\f0  przez g\f1\'b3\'f3\f0 wne menu. Poszczeg\f1\'f3\f0 lne przyciski odpowiadaj\f1\'b9\f0  za:
+\par 1 - utworzenie nowej bazy danych
+\par 2 - wczytanie bazy danych
+\par 3 - zapisanie bazy danych
+\par 4 - dodanie pozycji do bazy danych
+\par 5 - edycj\f1\'ea\f0  istniej\f1\'b9\f0 cej pozycji
+\par 6 - usuni\f1\'ea\f0 cie pozycji z bazy danych
+\par 7 - otworzenie pozycji
+\par 8 - zamkni\f1\'ea\f0 cie pozycji
+\par 9 - przeniesienie pozycji w g\f1\'f3\f0 r\f1\'ea\f0 
+\par 10 - przeniesienie pozycji w d\f1\'f3\'b3\f0 
+\par 
+\par \b Okno g\f1\'b3\'f3\f0 wne\b0 
+\par To tutaj pojawiaj\f1\'b9\f0  si\f1\'ea\f0  kolejne okna bazy danych
+\par 
+\par \b Okno bazy danych\b0 
+\par W tym oknie prezentowana jest zawarto\f1\'9c\'e6\f0  bazy danych. 
+\par 
+\par 
+\par \b Pasek stanu\b0 
+\par Pasek dzieli si\f1\'ea\f0  na trzy cz\f1\'ea\'9c\'e6\f0 :
+\par 1 - pokazuje liczb\f1\'ea\f0  obiekt\f1\'f3\f0 w wy\f1\'9c\f0 wietlonych w aktywnym oknie bazy danych
+\par 2 - pokazuje stan aktywnej bazy danych (zmodyfikowana czy nie)
+\par 3 - pokazuje lokalizacj\f1\'ea\f0  obiekt\f1\'f3\f0 w wy\f1\'9c\f0 wietlonych w aktywnym oknie bazy danych
+\par \cf1\f2 
+\par }
+3
+{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fswiss\fprq2\fcharset0 Arial;}{\f1\fnil Arial;}}
+\viewkind4\uc1\pard\lang1045\b\i\f0\fs28 Interfejs\b0\i0\f1\fs20 
+\par }
+0
+0
+Skanowanie dysku
+
+
+
+
+6
+{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil Arial;}{\f1\fswiss\fprq2\fcharset0 Arial;}{\f2\fswiss\fprq2\fcharset238{\*\fname Arial;}Arial CE;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 
+\par \cf0\f1 Aby przeszuka\f2\'e6\f1  dysk b\f2\'b9\f1 d\f2\'9f\f1  folder w poszukiwaniu utwor\f2\'f3\f1 w muzycznych z menu g\f2\'b3\'f3\f1 wnego nale\f2\'bf\f1 y  wybra\f2\'e6\f1  \i Narz\f2\'ea\f1 dzia->Skanowanie dysku\i0  i wskaza\f2\'e6\f1  folder do przeszukania. Mo\f2\'bf\f1 na te\f2\'bf\f1  przeci\f2\'b9\f1 gn\f2\'b9\'e6\f1  folder(y) na okno bazy danych. Przed skanowaniem uka\f2\'bf\f1 e si\f2\'ea\f1  okno dialogowe w kt\f2\'f3\f1 rym mo\f2\'bf\f1 na uzupe\f2\'b3\f1 ni\f2\'e6\f1  informacje o elementach jakie zostan\f2\'b9\f1  dodane. Nast\f2\'ea\f1 pnie rozpocznie si\f2\'ea\f1  skanowanie i po pewnym czasie (w zale\f2\'bf\f1 no\f2\'9c\f1 ci od ilo\f2\'9c\f1 ci danych i szybko\f2\'9c\f1 ci komputera) do bazy danych dodane zostan\f2\'ea\f1  wyszukane elementy. Nazwy wykonawc\f2\'f3\f1 w, album\f2\'f3\f1 w i utwor\f2\'f3\f1 w pozyskiwane s\f2\'b9\f1  z ID3 tag\f2\'f3\f1 w plik\f2\'f3\f1 w mp3. Je\f2\'bf\f1 eli takich tag\f2\'f3\f1 w brakuje to zale\f2\'bf\f1 nie od ustawie\f2\'f1\f1  programu u\f2\'bf\f1 ywane s\f2\'b9\f1  znaki zapytania b\f2\'b9\f1 d\f2\'9f\f1  informacje ze \f2\'9c\f1 cie\f2\'bf\f1 ki dost\f2\'ea\f1 pu do pliku, wed\f2\'b3\f1 ug wzoru \i wykonawca\\album\\nazwa_utworu.mp3\i0 .
+\par \cf1\f0 
+\par }
+3
+{\rtf1\ansi\deff0{\fonttbl{\f0\fswiss\fprq2\fcharset0 Arial;}{\f1\fnil Arial;}}
+\viewkind4\uc1\pard\lang1045\b\i\f0\fs28 Skanowanie dysku\b0\i0\f1\fs20 
+\par }
+0
+0
+Wyszukiwanie danych
+
+
+
+
+16
+{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fswiss\fprq2\fcharset0 Arial;}{\f1\fswiss\fprq2\fcharset238{\*\fname Arial;}Arial CE;}{\f2\fnil Arial;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\f0\fs20 
+\par \pard Wyszukiwanie danych obywa sie w Katalogusie na dwa sposoby. U\f1\'bf\f0 ytkownik mo\f1\'bf\f0 e wyszuka\f1\'e6\f0 elementy ze wzgl\f1\'ea\f0 du na nazw\f1\'ea\f0  lub ze wzgl\f1\'ea\f0 du na no\f1\'9c\f0 nik. Oba typy r\f1\'f3\'bf\f0 ni\f1\'b9\f0  si\f1\'ea\f0  nieco mi\f1\'ea\f0 dzy sob\f1\'b9\f0 , wi\f1\'ea\f0 c zostan\f1\'b9\f0  opisane osobno.
+\par 
+\par \b Wyszukiwanie ze wzgl\f1\'ea\f0 du na nazw\f1\'ea\b0\f0 
+\par Aby wywo\f1\'b3\f0 a\f1\'e6\f0  ten typ wyszukiwania z menu g\f1\'b3\'f3\f0 wnego nale\f1\'bf\f0 y wybra\f1\'e6\f0  \i Wyszukaj->Szukaj wed\f1\'b3\f0 ug nazw\i0 . Po podaniu szukanej frazy program rozpocznie wyszukiwanie element\f1\'f3\f0 w, kt\f1\'f3\f0 rych nazwa jest taka sama b\f1\'b9\f0 d\f1\'9f\f0  rozpoczyna si\f1\'ea\f0  tak samo jak wpisana fraza, np. po wpisaniu frazy Metal w wynikach znajdzie si\f1\'ea\f0  zar\f1\'f3\f0 wno element o nazwie Metal jak i Metallica\f1  \f0 oraz Metal Church. Algorytm wyszukuj\f1\'b9\f0 cy nie zwraca uwagi na wielkie litery. Taki sam efekt zostanie uzyskany po wpisaniu METAL, metal, czy Metal.
+\par 
+\par \b Wyszukiwanie ze wzgl\f1\'ea\f0 du na no\f1\'9c\f0 nik\b0 
+\par Aby wywo\f1\'b3\f0 a\f1\'e6\f0  ten typ wyszukiwania nale\f1\'bf\f0 y z menu g\f1\'b3\'f3\f0 wnego wybra\f1\'e6\f0  \i Wyszukaj->Szukaj wed\f1\'b3\f0 ug no\f1\'9c\f0 nik\f1\'f3\f0 w\i0 . Po podaniu szukanej frazy program rozpocznie wyszukiwanieelement\f1\'f3\f0 w, kt\f1\'f3\f0 rych no\f1\'9c\f0 nik jest dok\f1\'b3\f0 adnie taki sam, jak wpisana fraza, np. po wpisaniu frazy cd1 w wynikach znajd\f1\'b9\f0  si\f1\'ea\f0  tylko elementy, kt\f1\'f3\f0 rych no\f1\'9c\f0 nik oznaczony jest jako cd1, a nie cd11. Algorytm wyszukuj\f1\'b9\f0 cy nie zwraca uwagi na wielkie litery. Taki sam efekt zostanie uzyskany po wpisaniu CD1, cd1, cD1 b\f1\'b9\f0 d\f1\'9f\f0  Cd1.
+\par 
+\par \b Opcje wyszukiwania\b0 
+\par \i Szukaj w wykonawcach\i0  - w wynikach uwzgl\f1\'ea\f0 dnieni zostan\f1\'b9\f0  wykonawcy.
+\par \i Szukaj w albumach\i0  - w wynikach zostan\f1\'b9\f0  uwzgl\f1\'ea\f0 dnione albumy.
+\par \pard\i Szukaj w utworach\i0  - w utworach zostan\f1\'b9\f0  uwzgl\f1\'ea\f0 dnione utwory.\cf1\f2 
+\par }
+3
+{\rtf1\ansi\deff0{\fonttbl{\f0\fswiss\fprq2\fcharset0 Arial;}{\f1\fnil Arial;}}
+\viewkind4\uc1\pard\lang1045\b\i\f0\fs28 Wyszukiwanie danych\b0\i0\f1\fs20 
+\par }
+0
+0
+Tworzenie raportu
+
+
+
+
+42
+{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fswiss\fprq2\fcharset0 Arial;}{\f1\fswiss\fprq2\fcharset238{\*\fname Arial;}Arial CE;}{\f2\fnil Arial;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\f0\fs20 
+\par Abu utworzy\f1\'e6\f0  raport z g\f1\'b3\'f3\f0 wnego menu nale\f1\'bf\f0 y wybra\f1\'e6\f0  \i Narz\f1\'ea\f0 dzia->Raport\i0 . Spowoduje to uruchomienie czterokrokowego kreatora raport\f1\'f3\f0 w.
+\par 
+\par \b Krok 1\b0 
+\par W tym kroku nale\f1\'bf\f0 y ustali\f1\'e6\f0 , jakie czcionki zostan\f1\'b9\f0  u\f1\'bf\f0 yte do wy\f1\'9c\f0 wietlenia danych raportu. W raporcie u\f1\'bf\f0 ywanych jest pi\f1\'ea\'e6\f0  czcionek: czcionka nag\f1\'b3\'f3\f0 wka raportu, czcionka nag\f1\'b3\'f3\f0 wk\f1\'f3\f0 w kolumn, czcionka danych pierwszego poziomu, czcionka danych drugiego poziomu, czcionka danych trzeciego poziomu oraz czcionka stopki raportu.
+\par 
+\par \b Krok 2\b0 
+\par W tym kroku nale\f1\'bf\f0 y ustali\f1\'e6\f0  jakie pola maj\f1\'b9\f0  zosta\f1\'e6\f0  wy\f1\'9c\f0 wietlone w raporcie. W rubryce \i Dost\f1\'ea\f0 pne pola\f1  \i0\f0 widoczne s\f1\'b9\f0  pola, jakie mo\f1\'bf\f0 na wybra\f1\'e6\f0 . W rubryce \i Wybrane pola\i0  widniej\f1\'b9\f0  pola ju\f1\'bf\f0  wybrane. Pola wybiera si\f1\'ea\f0  poprzez zaznaczenie konkretnego pola w oknie \i Dost\f1\'ea\f0 pne pola\i0  i klikni\f1\'ea\f0 cie przycisku \i >\i0 . Aby usun\f1\'b9\'e6\f0  pole nale\f1\'bf\f0 y zaznaczy\f1\'e6\f0  konkretne pole w oknie \i Wybrane pola\i0  i klikn\f1\'b9\'e6\f0  przycisk <. Uwaga! Aby raport zosta\f1\'b3\f0  utworzony nale\f1\'bf\f0 y wybra\f1\'e6\f0  co najmniej jedno, ale nie wi\f1\'ea\f0 cej ni\f1\'bf\f0  trzy pola.
+\par 
+\par W kroku 2 nale\f1\'bf\f0 y wybra\f1\'e6\f0  tak\f1\'bf\f0 e orientacj\f1\'ea\f0  danych w raporcie. Do wyboru jest uk\f1\'b3\f0 ad tabelaryczny i kaskadowy. Je\f1\'bf\f0 eli uk\f1\'b3\f0 ad pierwszego poziomu jest tabelaryczny, to do ka\f1\'bf\f0 dego elementu drugiego poziomu zostanie dopisany element pierwszego poziomu. Je\f1\'bf\f0 eli uk\f1\'b3\f0 ad ten jest kaskadowy, do tylko do pierwszego elementu drugiego poziomu w danej grupie zostanie dopisany element pierwszego poziomu. Analogiczne przedstawia si\f1\'ea\f0  sytuacja z uk\f1\'b3\f0 adem drugiego poziomu.
+\par 
+\par Przyk\f1\'b3\f0 adowy uk\f1\'b3\f0 ad tabelaryczny (pierwszego i drugiego poziomu)
+\par 
+\par Metallica \tab - Load \tab\tab - 2 x 4
+\par Metallica \tab - Load \tab\tab - Ronnie
+\par Metallica \tab - Load \tab\tab - Thorn Within
+\par Metallica \tab - Reload \tab - Fuel
+\par Metallica\tab - Reload\tab - The Memory Remains
+\par Nightwish\tab - Once\tab\tab - Nemo
+\par Nightwish \tab - Once\tab\tab - I Wish I Had An Angel
+\par 
+\par Przyk\f1\'b3\f0 adowy uk\f1\'b3\f0 ad kaskadowy (pierwszego i drugiego poziomu)
+\par 
+\par Metallica \tab - Load \tab\tab - 2 x 4
+\par \tab  \tab  \tab  \tab - Ronnie
+\par \tab  \tab\tab  \tab - Thorn Within
+\par \tab  \tab - Reload \tab - Fuel
+\par \tab\tab\tab\tab - The Memory Remains
+\par Nightwish\tab - Once\tab\tab - Nemo
+\par \tab\tab\tab\tab - I Wish I Had An Angel
+\par 
+\par \b Krok 3\b0 
+\par W kroku tym nale\f1\'bf\f0 y poda\f1\'e6\f0  nag\f1\'b3\'f3\f0 wki dla kolejnych p\f1\'f3\f0 l w raporcie. Nag\f1\'b3\'f3\f0 wki te zostan\f1\'b9\f0  wy\f1\'9c\f0 wietlone ponad danymi kolejnych stopniczcionk\f1\'b9\f0  zdefiniowan\f1\'b9\f0  jako czcionka nag\f1\'b3\'f3\f0 wk\f1\'f3\f0 w kolumn.
+\par 
+\par \b Krok 4\b0 
+\par W kroku nale\f1\'bf\f0 y zaznaczy\f1\'e6\f0  dodatkowe opcje raportu, takie jak pozostawianie pustej linii mi\f1\'ea\f0 dzy danymi pierwszego poziomu b\f1\'b9\f0 d\f1\'9f\f0  znaki przystankowe.
+\par 
+\par Po klikni\f1\'ea\f0 ciu przycisku \i Zako\f1\'f1\f0 cz\i0  uka\f1\'bf\f0 e si\f1\'ea\f0  okno dialogowe z pro\f1\'9c\f0 b\f1\'b9\f0  o wybranie pliku raportu. Po klikni\f1\'ea\f0 ciu \i Zapisz\i0  zostanie utworzony nowy plik HTML zawieraj\f1\'b9\f0 cy gotowy raport.
+\par \cf1\f2 
+\par }
+3
+{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fswiss\fprq2\fcharset0 Arial;}{\f1\fnil Arial;}}
+\viewkind4\uc1\pard\lang1045\b\i\f0\fs28 Tworzenie raportu\b0\i0\f1\fs20 
+\par }
+0
+0
+Opcje programu
+
+
+
+
+31
+{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset238{\*\fname Arial;}Arial CE;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\b\fs20 
+\par Opcje og\f1\'f3\f0 lne\b0 
+\par \i Grupowo dodawaj nowych wykonawc\f1\'f3\f0 w\f1  \i0\f0 - zaznaczenie tej opcji spowoduje grupowe dodawanie wykonawc\f1\'f3\f0 w.
+\par 
+\par \i Grupowo dodawaj nowe albumy\f1  \i0\f0 - zaznaczenie tej opcji spowoduje grupowe dodawanie album\f1\'f3\f0 w.
+\par 
+\par \i Grupowo dodawaj nowe utwory\f1  \i0\f0 - zaznaczenie tej opcji spowoduje grupowe dodawanie utwor\f1\'f3\f0 w.
+\par 
+\par Pobierz nazw\f1\'ea\f0  wykonawcy ze \f1\'9c\f0 cie\f1\'bf\f0 ki przy pustym ID3- zaznaczenie tej opcji spowoduje pobieranie danych o wykonawcy ze \f1\'9c\f0 cie\f1\'bf\f0 ki dost\f1\'ea\f0 pu do pliku, je\f1\'bf\f0 eli ID3 Tag jest pusty.
+\par 
+\par Pobierz nazw\f1\'ea\f0  albumu ze \f1\'9c\f0 cie\f1\'bf\f0 ki przy pustym ID3- zaznaczenie tej opcji spowoduje pobieranie danych o albumie ze \f1\'9c\f0 cie\f1\'bf\f0 ki dost\f1\'ea\f0 pu do pliku, je\f1\'bf\f0 eli ID3 Tag jest pusty.
+\par 
+\par Pobierz tytu\f1\'b3\f0  utworu ze \f1\'9c\f0 cie\f1\'bf\f0 ki przy pustym ID3- zaznaczenie tej opcji spowoduje pobieranie danych o utworze ze \f1\'9c\f0 cie\f1\'bf\f0 ki dost\f1\'ea\f0 pu do pliku, je\f1\'bf\f0 eli ID3 Tag jest pusty.
+\par 
+\par Ostrzegaj przed dodaniem pozycji o nazwie ju\f1\'bf\f0  istniej\f1\'b9\f0 cej - zaznaczenie tej opcji spowoduje wy\f1\'9c\f0 wietlenia okienka z ostrze\f1\'bf\f0 eniem przy pr\f1\'f3\f0 bie dodania pozycji o nazwie ju\f1\'bf\f0  istniej\f1\'b9\f0 cej.
+\par 
+\par Pokazuj dymek z opisem, gdy kursor znajduje si\f1\'ea\f0  ponad pozycj\f1\'b9\f0  - zaznaczenie tej opcji uaktywni dymek z opisem elementu, je\f1\'bf\f0 eli ponad pozycj\f1\'b9\f0  kursor b\f1\'ea\f0 dzie znajdowa\f1\'b3\f0  si\f1\'ea\f0  co najmniej p\f1\'f3\'b3\f0 torej sekundy,
+\par 
+\par Pokazuj siatk\f1\'ea\f0  w oknie bazy danych - zaznaczenie tej opcji uaktywni siatk\f1\'ea\f0  w oknie bazy danych
+\par 
+\par Zapami\f1\'ea\f0 taj rozmiar i pozycj\f1\'ea\f0  okna - zaznaczenie tej opcji uruchomi mechanizm zapisuj\f1\'b9\f0 cy rozmiar oraz pozycj\f1\'ea\f0  okna po zamkni\f1\'ea\f0 ciu programu i  przywracaj\f1\'b9\f0 cy zapisane parametry po ponownym uruchomieniu programu.
+\par 
+\par \b Opcje wizualne\b0 
+\par Opcje te umo\f1\'bf\f0 liwiaj\f1\'b9\f0  ustawienie koloru t\f1\'b3\f0 a oraz parametr\f1\'f3\f0 w czcionki dla okna bazy danych i dymka z komentarzem. Po klikni\f1\'ea\f0 ciu na dany kolor b\f1\'b9\f0 d\f1\'9f\f0  czcionk\f1\'ea\f0  wy\f1\'9c\f0 wietli si\f1\'ea\f0  okno umo\f1\'bf\f0 liwiaj\f1\'b9\f0 ce wyb\f1\'f3\f0 r innego koloru lub czcionki.
+\par 
+\par \b Opcje bezpiecze\f1\'f1\f0 stwa\b0 
+\par Opcje bezpiecze\f1\'f1\f0 stwa umo\f1\'bf\f0 liwiaj\f1\'b9\f0  ustawienie has\f1\'b3\f0 a dla aktualnie aktywnej bazy danych. Has\f1\'b3\f0 o jest szyfrowane i zapisywane w pliku razem z baz\f1\'b9\f0  danych. Je\f1\'bf\f0 eli zostanie ustawione has\f1\'b3\f0 o, to przed wczytaniem bazy danych, dla kt\f1\'f3\f0 rej has\f1\'b3\f0 o zosta\f1\'b3\f0 o ustawione, uka\f1\'bf\f0 e si\f1\'ea\f0  okno z pro\f1\'9c\f0 b\f1\'b9\f0  o podanie has\f1\'b3\f0 a. Je\f1\'bf\f0 eli prawid\f1\'b3\f0 owe has\f1\'b3\f0 o nie zostanie podane plik bazy danych nie b\f1\'ea\f0 dzie m\f1\'f3\f0 g\f1\'b3\f0  zosta\f1\'e6\f0  wczytany.
+\par \cf1 
+\par }
+3
+{\rtf1\ansi\deff0{\fonttbl{\f0\fswiss\fprq2\fcharset0 Arial;}{\f1\fnil Arial;}}
+\viewkind4\uc1\pard\lang1045\b\i\f0\fs28 Opcje programu\b0\i0\f1\fs20 
+\par }
+0
+0

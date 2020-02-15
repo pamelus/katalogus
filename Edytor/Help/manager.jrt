@@ -1,0 +1,328 @@
+{\rtf1\ansi\deff0
+
+{\fonttbl
+{\f0\fnil\fcharset0 Arial;}
+{\f1\fswiss\fprq2\fcharset238{\*\fname Arial;}Arial CE;}
+{\f2\fnil Arial;}
+}
+
+{\colortbl;
+\red0\green0\blue0;
+}
+
+\plain\fs20\cf1
+
+#{\footnote 0}
+\keepn\b0\i0\cf0
+\lang1045
+\b
+\i
+\f1
+\fs28
+Do czego s\'b3u
+\'bfy
+ Menad\'bfer
+ t\'b3umacze
+\'f1
+ 1.1\b0
+\i0
+\f2
+\fs20
+\par
+\pard
+\b0\i0
+\f1
+\fs20
+\par
+Menad\'bfer
+ t\'b3umacze
+\'f1
+ 1.1 to narz\'eadzie
+ s\'b3u
+\'bf
+\'b9ce
+ do dokonywania t\'b3umacze
+\'f1
+ interfejsu aplikacji Katalogus 3.2. Menad\'bfer
+ na dzie\'f1
+ dzisiejszy dost\'eapny
+ jest tylko w j\'eazyku
+ polskim, ale jego interfejs jest na tyle uproszczony, \'bfe
+ nawet nie rozumiej\'b9c
+ komunikat\'f3w
+ programu mo\'bfna
+ skutecznie dokona\'e6
+ t\'b3umaczenia.
+ Praca z menad\'bferem
+ polega na wczytaniu dowolnego istniej\'b9cego
+ pliku j\'eazykowego,
+ dokonania translacji zapisanych w nim informacji i zapisania zmienionego pliku pod inn\'b9
+ nazw\'b9.
+\cf1
+\f2
+\par
+
+\page
+
+#{\footnote 1}
+\keepn\b0\i0\cf0
+\lang1045
+\b
+\i
+\f1
+\fs28
+O autorze i podzi\'eakowania
+\b0
+\i0
+\f2
+\fs20
+\par
+\pard
+\b0\i0
+\f1
+\fs20
+\par
+Jedynym i wy\'b3
+\'b9cznym
+ autorem programu Katalogus 3.2 jest Patryk Koz\'b3owski,
+ pa\'9fdziernik
+ 2004.\par
+Autor chcia\'b3by
+ podzi\'eakowa
+\'e6
+ wszystkim osobom, kt\'f3re
+ w jakikolwiek spos\'f3b
+ przyczyni\'b3y
+ si\'ea
+ do powstania programu. W szczeg\'f3lno
+\'9cci
+ s\'b9
+ to (kolejno\'9c
+\'e6
+ alfabetyczna):\par
+ - Robert Flasi\'f1ski
+\par
+ - Tomek Koz\'b3owski
+\par
+ - Gra\'bfyna
+ Koz\'b3owska
+\par
+ - Micha\'b3
+ Scheffs\par
+ - Radek Sobieszczyk\cf1
+\f2
+\par
+
+\page
+
+#{\footnote 2}
+\keepn\b0\i0\cf0
+\lang1045
+\b
+\i
+\fs28
+Tworzenie i wczytywanie pliku\b0
+\i0
+\f2
+\fs20
+\par
+\pard
+\b0\i0
+\f1
+\fs20
+\par
+Nowy plik tworzy si\'ea
+ poprzez wybranie \i
+Plik->Nowy\i0
+ z menu g\'b3
+\'f3wnego.
+ Wi\'eakszo
+\'9c
+\'e6
+ ustawie\'f1
+ pliku j\'eazykowego
+ zostanie w tym momencie wyzerowana. Aby przet\'b3umaczy
+\'e6
+ program niezb\'eadny
+ b\'eadzie
+ jednak inny, istniej\'b9cy
+ ju\'bf
+ plik j\'eazykowy.
+ Bez niego dokonanie translacji b\'eadzie
+ niemo\'bfliwe
+ b\'b9d
+\'9f
+ bardzo utrudnione. Aby wczyta\'e6
+ istniej\'b9cy
+ plik j\'eazykowy
+ z menu g\'b3
+\'f3wnego
+ nale\'bfy
+ wybra\'e6
+ \i
+Plik->Wczytaj\i0
+ i w oknie dialogowym wybra\'e6
+ plik do wczytania.\cf1
+\f2
+\par
+
+\page
+
+#{\footnote 3}
+\keepn\b0\i0\cf0
+\lang1045
+\b
+\i
+\f1
+\fs28
+Zapisywanie pliku\b0
+\i0
+\f2
+\fs20
+\par
+\pard
+\b0\i0
+\f1
+\fs20
+\par
+Aby zapisa\'e6
+ nowy b\'b9d
+\'9f
+ wczytany plik pod niezmienion\'b9
+ nazw\'b9
+ nale\'bfy
+ z g\'b3
+\'f3wnego
+ menu wybra\'e6
+ \i
+Plik->Zapisz\i0
+. Je\'bfeli
+ aktualnie aktywne t\'b3umaczenie
+ nie by\'b3o
+ powi\'b9zane
+ z \'bfadnym
+ plikiem na dysku (nie by\'b3o
+ ani wczytane, ani wcze\'9cniej
+ zapisywane) uka\'bfe
+ si\'ea
+ okno dialogowe z pro\'9cb
+\'b9
+ o wybranie nazwy i lokalizacji dla pliku. W przeciwnym wypadku nadpisany zostanie plik powi\'b9zany
+ z aktualnym t\'b3umaczeniem.
+ Plik powinien mie\'e6
+ nazw\'ea
+ to\'bfsam
+\'b9
+ z danymi, jakie zawiera.\cf1
+\f2
+\par
+
+\page
+
+#{\footnote 4}
+\keepn\b0\i0\cf0
+\lang1045
+\b
+\i
+\f1
+\fs28
+Dokonywanie t\'b3umaczenia
+\b0
+\i0
+\f2
+\fs20
+\par
+\pard
+\b0\i0
+\f1
+\fs20
+\par
+Najprostszym sposobem dokonania t\'b3umaczenia
+ jest przet\'b3umaczenie
+ istniej\'b9cego
+ pliku j\'eazykowego.
+ Proces translacji rozpocz\'b9
+\'e6
+ wi\'eac
+ nale\'bfy
+ od wczytania pliku j\'eazykowego.
+ Po wczytaniu nale\'bfy
+ zapisa\'e6
+ plik pod nazw\'b9
+ to\'bfsam
+\'b9
+ z j\'eazykiem,
+ na kt\'f3ry
+ b\'eadzie
+ t\'b3umaczona
+ aplikacja (polecenie \i
+Plik->Zapisz jako...\i0
+). Po tych zabiegach pozostaje przet\'b3umaczenie
+ danych znajduj\'b9cych
+ si\'ea
+ na kolejnych zak\'b3adkach
+ (dane w obr\'eabie
+ zak\'b3adki
+ przesuwa si\'ea
+ przyciskami \i
+Dalej\i0
+ i \i
+Wstecz\i0
+. Po dokonaniu translacji trzeba jeszcze tylko zapisa\'e6
+ plik (polecenie \i
+Plik->Zapisz\i0
+). Plik j\'eazykowy
+ zosta\'b3
+ przet\'b3umaczony.
+\par
+\cf1
+\f2
+\par
+
+\page
+
+#{\footnote 5}
+\keepn\b0\i0\cf0
+\lang1045
+\b
+\i
+\f1
+\fs28
+Wykorzystanie t\'b3umaczenia
+ w Katalogusie 3.2\b0
+\i0
+\f2
+\fs20
+\par
+\pard
+\b0\i0
+\f1
+\fs20
+\par
+Aby wykorzysta\'e6
+ nowy plik j\'eazykowy
+ w aplikacji nale\'bfy
+ najpierw zamkn\'b9
+\'e6
+ Katalogusa 3.2. Nast\'eapnie
+ skopiowa\'e6
+ stworzony plik do katalogu \i
+%AppPath%\\translations\i0
+, gdzie \i
+%AppPath%\i0
+ oznacza folder do kt\'f3rego
+ zainstalowany zosta\'b3
+ Katalogus. Po ponownym uruchomieniu programu w menu \i
+Narz\'eadzia->J
+\'eazyk
+\i0
+ pojawi si\'ea
+ pozycja o nazwie identycznej z nazw\'b9
+ Twojego pliku. Po wybraniu tej pozycji w programie zostan\'b9
+ wykorzystane Twoje dane.\cf1
+\f2
+\par
+
+\page
+
+}

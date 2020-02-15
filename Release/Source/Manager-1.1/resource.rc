@@ -1,0 +1,59 @@
+#define CX PROP_LG_CXDLG
+#define CY 220
+
+#include <windows.h>
+#include "kontrolki.h"
+
+MAIN_DIALOG DIALOG 0, 0, 390, 110
+STYLE WS_SYSMENU | WS_MINIMIZEBOX | WS_CAPTION
+CAPTION "Menad¿er t³umaczeñ 1.1 - Xamax Software"
+FONT 8, "MS Sans Serif"
+{
+    CONTROL "", 100, WC_TABCONTROL, TCS_TABS | WS_TABSTOP, 2, 2, 386, 95
+    PUSHBUTTON "", 0, 5, 14, 380, 80, BS_GROUPBOX
+    CTEXT "NULL STRING", 200, 10, 22, 370, 10
+    EDITTEXT "", 201, 10, 40, 370, 12, ES_AUTOHSCROLL | ES_CENTER | WS_TABSTOP
+    CTEXT "NULL STRING", 202, 10, 80, 370, 10
+    PUSHBUTTON "<< Wstecz", 301, 114, 60, 80, 14, WS_TABSTOP
+    DEFPUSHBUTTON "Dalej >>", 302, 197, 60, 80, 14, WS_TABSTOP
+}
+
+OPROGRAMIE DIALOG 0, 0, 180, 90
+STYLE WS_CAPTION
+CAPTION "O programie"
+FONT 8, "MS Sans Serif"
+{
+    ICON "IKONA", 101, 5, 5, 32, 32
+    DEFPUSHBUTTON "OK", 100, 55, 70, 70, 12, WS_TABSTOP
+    LTEXT "Menad¿er t³umaczeñ 1.1", 0, 55, 8, 80, 10
+    CTEXT "Edytor plików jêzykowych dla Katalogus 3.2\n\nFreeware (C) Wszelkie prawa zastrze¿one dla Xamax Software Patryk Koz³owski", 0, 10, 30, 160, 35
+}
+
+ACCELS ACCELERATORS DISCARDABLE
+{
+    "^N", IDC_NOWY, CONTROL, VIRTKEY
+    "^O", IDC_WCZYTAJ, CONTROL, VIRTKEY
+    "^S", IDC_ZAPISZ, CONTROL, VIRTKEY
+    "^S", IDC_ZAPISZJAKO, CONTROL, SHIFT, VIRTKEY
+    VK_F1, IDC_POMOC, VIRTKEY
+}
+
+MAINMENU MENU
+{
+    POPUP "&Plik"
+    {
+        MENUITEM "&Nowy\tCtrl + N", IDC_NOWY
+        MENUITEM SEPARATOR
+        MENUITEM "&Wczytaj\tCtrl + O", IDC_WCZYTAJ
+        MENUITEM "&Zapisz\tCtrl + S", IDC_ZAPISZ
+        MENUITEM "Z&apisz jako...\tCtrl + Shift + S", IDC_ZAPISZJAKO
+        MENUITEM SEPARATOR
+        MENUITEM "&Koniec\tAlt + F4", IDC_KONIEC
+    }
+    POPUP "P&omoc"
+    {
+        MENUITEM "&Tematy pomocy\tF1", IDC_POMOC
+        MENUITEM SEPARATOR
+        MENUITEM "O programie", IDC_OPROGRAMIE
+    }
+}

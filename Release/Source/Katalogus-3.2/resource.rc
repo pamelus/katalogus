@@ -1,0 +1,556 @@
+#include <windows.h>
+#include <richedit.h>
+#include "kontrolki.h"
+
+B ICON "ikony\\kdb.ico"
+
+NEW_ICON ICON "ikony\\new.ico"
+LOAD_ICON ICON "ikony\\open.ico"
+SAVE_ICON ICON "ikony\\save.ico"
+ADD_ICON ICON "ikony\\add.ico"
+EDIT_ICON ICON "ikony\\edit.ico"
+DELETE_ICON ICON "ikony\\delete.ico"
+OPEN_ICON ICON "ikony\\otworz.ico"
+BACK_ICON ICON "ikony\\wstecz.ico"
+UP_ICON ICON "ikony\\up.ico"
+DOWN_ICON ICON "ikony\\down.ico"
+SEARCH_ICON ICON "ikony\\search.ico"
+RESULTS_ICON ICON "ikony\\results.ico"
+ITEM_ICON ICON "ikony\\properties.ico"
+ACCELS_ICON ICON "ikony\\accels.ico"
+
+AUTOR_ICON ICON "ikony\\autor.ico"
+ALBUM_ICON ICON "ikony\\album.ico"
+AUDIO_ICON ICON "ikony\\audio.ico"
+STATS_ICON ICON "ikony\\stats.ico"
+
+OPTIONS_ICON ICON "ikony\\options.ico"
+OPTIONS_MAIN_ICON ICON "ikony\\options_main.ico"
+OPTIONS_VISUAL_ICON ICON "ikony\\options_visual.ico"
+OPTIONS_SAFETY_ICON ICON "ikony\\options_safety.ico"
+
+LOGO_BITMAP BITMAP "bitmapy\\katalogus.bmp"
+
+MainMenu MENU
+{
+    POPUP "&Baza danych"
+    {
+        MENUITEM "&Nowa", IDC_NOWA
+        MENUITEM SEPARATOR
+        MENUITEM "&Wczytaj", IDC_WCZYTAJ
+        MENUITEM "&Zapisz", IDC_ZAPISZ
+        MENUITEM "Z&apisz jako...", IDC_ZAPISZJAKO
+        MENUITEM "Za&mknij", IDC_ZAMKNIJ
+        MENUITEM SEPARATOR
+        MENUITEM "(puste)", IDC_RECENT1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Za&koñcz", IDC_KONIEC
+    }    
+    POPUP "&Pozycja"
+    {
+        MENUITEM "&Otwórz", IDC_OTWORZ
+        MENUITEM "&Wstecz", IDC_WSTECZ
+        MENUITEM SEPARATOR
+        MENUITEM "Doda&j pozycjê", IDC_DODAJ
+        MENUITEM "&Edytuj pozycjê", IDC_EDYTUJ
+        MENUITEM "&Usuñ pozycjê", IDC_USUN
+        MENUITEM SEPARATOR
+        MENUITEM "Przenieœ w &górê", IDC_GORA
+        MENUITEM "Przenieœ w &dó³", IDC_DOL
+        MENUITEM SEPARATOR
+        MENUITEM "Sortuj wed³ug &nazw", IDC_SZEREGUJNAZWA
+        MENUITEM "Sortuj wed³ug noœni&ków", IDC_SZEREGUJNOSNIK
+        MENUITEM "Sortuj wed³ug o&pisów", IDC_SZEREGUJOPIS
+    }
+    POPUP "&Wyszukaj"
+    {
+        MENUITEM "Szukaj wed³ug &nazw", IDC_SZUKAJNAZWA
+        MENUITEM "Szukaj wed³ug n&oœników", IDC_SZUKAJNOSNIK
+    }
+    POPUP "&Narzêdzia"
+    {
+        MENUITEM "&Ustawienia", IDC_OPCJE
+        POPUP "&Jêzyk"
+        {
+           MENUITEM "(puste)", IDC_JEZYK0, GRAYED
+        }
+        MENUITEM SEPARATOR
+        MENUITEM "&Menad¿er t³umaczeñ", IDC_EDYTOR
+        MENUITEM "&Statystyka", IDC_STATYSTYKA
+        MENUITEM "&Raport", IDC_RAPORT
+        MENUITEM SEPARATOR
+        MENUITEM "&Przeszukiwanie dysku", IDC_SKANUJ
+    }
+    POPUP "&Okno"
+    {
+        MENUITEM "S¹siaduj¹co w p&oziomie", IDC_HSASIAD
+        MENUITEM "S¹siaduj¹co w p&ionie", IDC_VSASIAD
+        MENUITEM "&Kaskadowo", IDC_KASKADA
+    }
+    POPUP "Po&moc"
+    {
+        MENUITEM "&Tematy pomocy", IDC_POMOC
+        MENUITEM SEPARATOR
+        MENUITEM "&Skróty klawiszowe", IDC_SKROTY
+        MENUITEM "&O programie", IDC_OPROGRAMIE
+    }    
+}
+
+ContextMenu MENU
+{
+    POPUP "Menu kontektowe"
+    {
+        MENUITEM "Otwórz pozycjê", IDC_OTWORZ
+        MENUITEM "Wstecz", IDC_WSTECZ
+        MENUITEM SEPARATOR
+        MENUITEM "Dodaj pozycjê", IDC_DODAJ
+        MENUITEM "Edytuj pozycjê", IDC_EDYTUJ
+        MENUITEM "Usuñ pozycjê", IDC_USUN
+        MENUITEM SEPARATOR
+        MENUITEM "Przenieœ w górê", IDC_GORA
+        MENUITEM "Przenieœ w dó³", IDC_DOL
+        MENUITEM SEPARATOR
+        MENUITEM "Sortuj wed³ug nazw", IDC_SZEREGUJNAZWA
+        MENUITEM "Sortuj wed³ug noœników", IDC_SZEREGUJNOSNIK
+        MENUITEM "Sortuj wed³ug opisów", IDC_SZEREGUJOPIS
+        MENUITEM SEPARATOR
+        MENUITEM "Szukaj wed³ug nazw", IDC_SZUKAJNAZWA
+        MENUITEM "Szukaj wed³ug noœników", IDC_SZUKAJNOSNIK
+        MENUITEM SEPARATOR
+        MENUITEM "Statystyka", IDC_STATYSTYKA
+        MENUITEM "Raport", IDC_RAPORT
+    }
+}
+
+STRINGTABLE DISCARDABLE
+{
+    0, "OK"
+    1, "Anuluj"
+    2, "Tak na wszystkie"
+    3, "Tak"
+    4, "Nie"
+    5, "Nie na wszystkie"
+    6, "Bez nazwy"
+    7, "Wczytaj bazê danych"
+    8, "Zapisz bazê danych"
+    9, "Zapisz bazê danych jako"
+    10, "Bazy danych programu Katalogus"
+    11, "Wszystkie pliki"
+    12, "W³aœciwoœci"
+    13, "Nazwa:"
+    14, "Noœnik:"
+    15, "Opis:"
+    16, "Wyszukiwanie"
+    17, "Szukana fraza:"
+    18, "ZnajdŸ"
+    19, "Opcje wyszukiwania"
+    20, "Szukaj w wykonawcach"
+    21, "Szukaj w albumach"
+    22, "Szukaj w utworach"
+    23, "Wyniki wyszukiwania [ %s ] - znaleziono %i"
+    24, "Zastosuj dla wykonawców"
+    25, "Zasotosuj dla albumów"
+    26, "Zastosuj dla utworów"
+    27, "Czekaj, trwa skanowanie..."
+    28, "Nie wpisa³eœ nazwy dla pozycji!"
+    29, "Nie wpisa³eœ szukanej frazy!"
+    30, "Statystyka [ %s ]"
+    31, "Skróty klawiszowe"
+    32, "Kreator raportów: krok 1"
+    33, "Jakie czcionki maj¹ zostaæ u¿yte w raporcie?"
+    34, "Czcionka nag³ówka 1"
+    35, "Czcionka jaka zostanie u¿yta do wyœwietlenia nag³ówka raportu"
+    36, "Czcionka nag³ówka 2"
+    37, "Czcionka jaka zostanie u¿yta do wyœwietlenia nag³ówków pól raportu"
+    38, "Czcionka raportu 1"
+    39, "Czcionka jaka zostanie u¿yta do wyœwietlenia danych pierwszego stopnia"
+    40, "Czcionka raportu 2"
+    41, "Czcionka jaka zostanie u¿yta do wyœwietlenia danych drugiego stopnia"
+    42, "Czcionka raportu 3"
+    43, "Czcionka jaka zostanie u¿yta do wyœwietlenia danych trzeciego stopnia"
+    44, "Czcionka stopki"
+    45, "Czcionka jaka zostanie u¿yta do wyœwietlenia stopki"
+    46, "Kreator raportów: krok 2"
+    47, "Jakie pola i w jakiej kolejnoœci maj¹ zostaæ umieszczone w raporcie?"
+    48, "Dostêpne pola:"
+    49, "Wybrane pola:"
+    50, "Jaki ma byæ uk³ad pierwszego poziomu raportu?"
+    51, "Jaki ma byæ uk³ad drugiego poziomu raportu?"
+    52, "Kaskadowy"
+    53, "Tabelaryczny"
+    54, "Kreator raportów: krok 3"
+    55, "Podaj nag³ówki dla kolejnych pól w raporcie?"
+    56, "Nag³ówek pierwszego stopnia"
+    57, "Nag³ówek drugiego stopnia"
+    58, "Nag³owek trzeciego stopnia"
+    59, "Kreator raportów: krok 4"
+    60, "Wybierz dodatkowe opcje raportu i kliknij zakoñcz."
+    61, "Odzielaj dane pierwszego poziomu pustym wierszem (tylko dla widoku kaskady)"
+    62, "Oddzielaj dane drugiego poziomu pustym wierszem (tylko dla widoku kaskady)"
+    63, "U¿yj znaku przystankowego pierwszego poziomu"
+    64, "U¿yj znaku przystankowego drugiego poziomu"
+    65, "Znak przystankowy pierwszego poziomu:"
+    66, "Znak przystankowy drugiego poziomu:"
+    67, "wykonawca.nazwa"
+    68, "wykonawca.noœnik"
+    69, "album.nazwa"
+    70, "album.noœnik"
+    71, "utwór.nazwa"
+    72, "utwór.noœnik"
+    73, "Raport nie mo¿e mieæ wiêcej jak trzy pola!"
+    74, "Ogólna liczba wykonawców:"
+    75, "Ogólna liczba albumów:"
+    76, "Ogólna liczba utworów:"
+    77, "Œrednia liczba albumów dla wykonawcy:"
+    78, "Œrednio utworów w albumie:"
+    79, "nowa baza danych"
+    80, "wczytaj bazê danych"
+    81, "zapisz bazê danych"
+    82, "zapisz bazê danych jako"
+    83, "zamknij bazê danych"
+    84, "otwórz pozcyjê"
+    85, "pozycja wstecz"
+    86, "dodaj pozycjê"
+    87, "edytuj pozycjê"
+    88, "usuñ pozycjê"
+    89, "przenieœ pozycjê w górê"
+    90, "przenieœ pozycjê w dó³"
+    91, "szukaj wed³ug nazw"
+    92, "szukaj wed³yg noœników"
+    93, "przeszukiwanie dysku"
+    94, "statystyka bazy danych"
+    95, "kreator raportów"
+    96, "ustawienia programu"
+    97, "tematy pomocy"
+    98, "Has³o"
+    99, "Podaj has³o, aby otworzyæ plik"
+    100, "Podane has³o jest nieprawid³owe."
+    101, "Ustawienia"
+    102, "Ogólne"
+    103, "Wizualne"
+    104, "Zabezpieczenia"
+    105, "Grupowo dodawaj nowych wykonawców"
+    106, "Grupowo dodawaj nowe albumy"
+    107, "Grupowo dodawaj nowe utwory"
+    108, "Pobierz nazwê wykonawcy ze scie¿ki przy pustym ID3"
+    109, "Pobierz nazwê albumu ze scie¿ki przy pustym ID3"
+    110, "Pobierz tytu³ utworu ze scie¿ki przy pustym ID3"
+    111, "Ostrzegaj przed dodaniem pozycji o nazwie ju¿ istniej¹cej"
+    112, "Pokazuj dymek z opisem, gdy kursor znajduje siê ponad pozycj¹"
+    113, "Pokazuj siatkê w oknie bazy danych"
+    114, "Zapamiêtaj rozmiar i pozycjê okna"
+    115, "Okno bazy danych"
+    116, "Dymek z opisem"
+    117, "Kolor t³a:"
+    118, "Kolor tekstu:"
+    119, "Czcionka:"
+    120, "Zabezpiecz bazê danych has³em"
+    121, "W³aœciwoœci has³a"
+    122, "Has³o:"
+    123, "Powtórz has³o:"
+    124, "Uwaga! Has³o wpisane powy¿ej zostanie przypisane wy³¹cznie do aktualnie aktywnej bazy danych.\nWiêcej na temat hase³ znajdziesz w pliku pomocy."
+    125, "Has³o zaakceptowane"
+    126, "Has³a nie zgadzaj¹ siê"
+    127, "Wybierz katalog do przeskanowania."
+    128, "Dokumenty HTML"
+    129, "Wybierz plik raportu"
+    130, "Czy zapisaæ zmaiany w bazie danych [ %s ] przed zamkniêciem?"
+    131, "W albumie  [ %s ] znajduje siê ju¿ pozycja o nazwie [ %s ]. Czy na pewno chcesz dodaæ now¹ pozycjê o tej samej nazwie?"
+    132, "W bazie danych znajduje siê ju¿ pozycja o nazwie [ %s ].\nCzy na pewno chcesz dodaæ now¹ pozycjê o tej samej nazwie?"
+    133, "Nie znaleziono frazy [ %s ]."
+    134, "Nazwa"
+    135, "Noœnik"
+    136, "Opis"
+    137, "Lokalizacja"
+    138, "Identyfikator"
+    139, "Wyst¹pi³ b³¹d podczas tworzenia jednego z elementów interfejsu programu.\n¯¹danie nie mo¿e zostaæ spe³nione."
+    140, "Wyst¹pi³ b³ad podczas tworzenia pliku. Plik nie mo¿e zostaæ utworzony."
+    141, "Wyst¹pi³ b³¹d podczas otwierania pliku. Plik nie mo¿e zostaæ otworzony."
+    142, "Wyst¹pi³ b³¹d dostêpu do pliku. Skontaktuj siê z administratorem systemu."
+    143, "Podany plik nie jest poprawnym plikiem bazy danych programu Katalogus."
+    144, "Zmodyfikowana"
+    145, "Obiektów:"
+    146, "znaków"
+    147, "Raport bazy danych"
+    148, "Baza danych"
+    149, "(brak opisu)"
+    150, "Nowa baza danych (Ctrl + N)"
+    151, "Wczytaj bazê danych (Ctrl + O)"
+    152, "Zapisz bazê danych (Ctrl + S)"
+    153, "Dodaj pozycjê (Ctrl + D)"
+    154, "Edytuj pozycjê (F2)"
+    155, "Usuñ pozycjê (Delete)"
+    156, "Otwórz pozycjê (Enter)"
+    157, "Wstecz (Backspace)"
+    158, "Przenieœ pozycjê w górê (Ctrl + Up)"
+    159, "Przenieœ pozycjê w dó³ (Ctrl + Down)"
+    160, "Patyk Koz³owski"
+    161, "pamelus86@yahoo.co.uk"
+}
+
+ACCELS ACCELERATORS DISCARDABLE
+{
+    "^N", IDC_NOWA, CONTROL, VIRTKEY
+    "^O", IDC_WCZYTAJ, CONTROL, VIRTKEY
+    "^S", IDC_ZAPISZ, CONTROL, VIRTKEY
+    "^S", IDC_ZAPISZJAKO, CONTROL, SHIFT, VIRTKEY
+    "^W", IDC_ZAMKNIJ, CONTROL, VIRTKEY
+    VK_RETURN, IDC_OTWORZ, VIRTKEY
+    VK_BACK, IDC_WSTECZ, VIRTKEY
+    "^D", IDC_DODAJ, CONTROL, VIRTKEY
+    VK_F2, IDC_EDYTUJ, VIRTKEY
+    VK_DELETE, IDC_USUN, VIRTKEY
+    VK_UP, IDC_GORA, CONTROL, VIRTKEY
+    VK_DOWN, IDC_DOL, CONTROL, VIRTKEY
+    "^F", IDC_SZUKAJNAZWA, CONTROL, VIRTKEY
+    "^F", IDC_SZUKAJNOSNIK, CONTROL, SHIFT, VIRTKEY
+    VK_F8, IDC_OPCJE, VIRTKEY
+    VK_F5, IDC_SKANUJ, VIRTKEY
+    VK_F6, IDC_STATYSTYKA, VIRTKEY
+    VK_F7, IDC_RAPORT, VIRTKEY
+    VK_F1, IDC_POMOC, VIRTKEY
+}
+
+ITEM_DIALOG DIALOG 0, 0, 150, 130
+STYLE WS_VISIBLE | WS_POPUP | WS_CAPTION | DS_MODALFRAME | WS_SYSMENU
+CAPTION ""
+FONT 8, "MS Sans Serif"
+{
+    LTEXT "", IDBOX_STATIC1, 2, 2, 146, 10
+    EDITTEXT "", IDBOX_NAZWA, 2, 12, 146, 12, ES_AUTOHSCROLL | WS_TABSTOP
+    LTEXT "", IDBOX_STATIC2, 2, 26, 146, 10
+    EDITTEXT "", IDBOX_NOSNIK, 2, 36, 146, 12, ES_AUTOHSCROLL | WS_TABSTOP
+    LTEXT "", IDBOX_STATIC3, 2, 50, 146, 10
+    EDITTEXT "", IDBOX_OPIS, 2, 60, 146, 50, ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON "", IDCBOX_OK, 42, 115, 52, 12, WS_TABSTOP
+    PUSHBUTTON "", IDCBOX_ANULUJ, 96, 115, 52, 12, WS_TABSTOP
+}
+
+FIND_DIALOG DIALOG 0, 0, 160, 80
+STYLE WS_VISIBLE | WS_POPUP | WS_CAPTION | DS_MODALFRAME | WS_SYSMENU
+CAPTION ""
+FONT 8, "MS Sans Serif"
+{
+    LTEXT "", IDBOX_STATIC1, 2, 2, 136, 10
+    EDITTEXT "", IDBOX_NAZWA, 2, 12, 100, 12, ES_AUTOHSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON "", IDCBOX_OK, 106, 12, 52, 12, WS_TABSTOP
+    PUSHBUTTON "", IDBOX_STATIC2, 2, 28, 156, 50, BS_GROUPBOX
+    PUSHBUTTON "", IDBOX_AUTOR, 8, 40, 100, 10, BS_AUTOCHECKBOX | WS_TABSTOP
+    PUSHBUTTON "", IDBOX_ALBUM, 8, 52, 100, 10, BS_AUTOCHECKBOX | WS_TABSTOP
+    PUSHBUTTON "", IDBOX_AUDIO, 8, 64, 100, 10, BS_AUTOCHECKBOX | WS_TABSTOP
+}
+
+RESULT_DIALOG DIALOG 0, 0, 350, 120
+STYLE WS_VISIBLE | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_SIZEBOX
+CAPTION ""
+FONT 8, "MS Sans Serif"
+{
+    CONTROL "", ID_WIDOK, WC_LISTVIEW, WS_CHILD | WS_VISIBLE | WS_TABSTOP | LVS_REPORT | LVS_SHOWSELALWAYS | LVS_SINGLESEL, 0, 0, 350, 120, WS_EX_CLIENTEDGE
+}
+
+SCANITEM_DIALOG DIALOG 0, 0, 150, 145
+STYLE WS_VISIBLE | WS_POPUP | WS_CAPTION | DS_MODALFRAME | WS_SYSMENU
+CAPTION ""
+FONT 8, "MS Sans Serif"
+{
+    LTEXT "", IDBOX_STATIC2, 2, 2, 146, 10
+    EDITTEXT "", IDBOX_NOSNIK, 2, 12, 146, 12, ES_AUTOHSCROLL | WS_TABSTOP
+    LTEXT "", IDBOX_STATIC3, 2, 26, 146, 10
+    EDITTEXT "", IDBOX_OPIS, 2, 36, 146, 50, ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON "", IDBOX_AUTOR, 4, 90, 142, 10, BS_AUTOCHECKBOX | WS_TABSTOP
+    PUSHBUTTON "", IDBOX_ALBUM, 4, 102, 142, 10, BS_AUTOCHECKBOX | WS_TABSTOP
+    PUSHBUTTON "", IDBOX_AUDIO, 4, 114, 142, 10, BS_AUTOCHECKBOX | WS_TABSTOP
+    DEFPUSHBUTTON "", IDCBOX_OK, 42, 130, 52, 12, WS_TABSTOP
+    PUSHBUTTON "", IDCBOX_ANULUJ, 96, 130, 52, 12, WS_TABSTOP
+}
+
+MESSAGE_DIALOG DIALOG 0, 0, 272, 70
+STYLE WS_VISIBLE | WS_POPUP | WS_CAPTION | DS_MODALFRAME | WS_SYSMENU
+CAPTION ""
+FONT 8, "MS Sans Serif"
+{
+    ICON "AUTOR_ICON", IDBOX_STATIC1, 5, 10, 32, 32
+    LTEXT "", IDBOX_STATIC2, 40, 10, 227, 40
+    PUSHBUTTON "", IDCBOX_YESTOALL, 3, 54, 65, 12, WS_TABSTOP
+    DEFPUSHBUTTON "", IDCBOX_YES, 70, 54, 65, 12, WS_TABSTOP
+    PUSHBUTTON "", IDCBOX_NO, 137, 54, 65, 12, WS_TABSTOP
+    PUSHBUTTON "", IDCBOX_NOTOALL, 204, 54, 65, 12, WS_TABSTOP
+}    
+
+SCAN_DIALOG DIALOG 0, 0, 210, 76
+STYLE WS_VISIBLE | WS_POPUP | WS_CAPTION | DS_MODALFRAME
+CAPTION ""
+FONT 8, "MS Sans Serif"
+{
+    CTEXT "", IDBOX_STATIC1, 1, 10, 198, 12
+    CTEXT "", IDBOX_STATIC2, 1, 30, 198, 24
+    DEFPUSHBUTTON "", IDCBOX_ANULUJ, 70, 60, 70, 12
+}
+
+STATS_DIALOG DIALOG 0, 0, 200, 100
+STYLE WS_VISIBLE | WS_POPUP | WS_CAPTION | DS_MODALFRAME | WS_SYSMENU
+CAPTION ""
+FONT 8, "MS Sans Serif"
+{
+    ICON "STATS_ICON", IDBOX_STATIC1, 5, 10, 32, 32
+    LTEXT "", IDBOX_STATIC2, 40, 10, 165, 72
+    DEFPUSHBUTTON "", IDCBOX_OK, 70, 84, 70, 12, WS_TABSTOP
+}
+
+ABOUT_DIALOG DIALOG 0, 0, 295, 140
+STYLE WS_POPUP | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+{
+}
+
+ACCEL_DIALOG DIALOG 0, 0, 200, 200
+STYLE WS_VISIBLE | WS_POPUP | WS_CAPTION | DS_MODALFRAME | WS_SYSMENU
+CAPTION ""
+FONT 8, "MS Sans Serif"
+{
+    LTEXT "", IDBOX_STATIC1, 10, 10, 50, 185
+    LTEXT "", IDBOX_STATIC2, 70, 10, 120, 185
+}
+
+PSSWD_DIALOG DIALOG 0, 0, 190, 58
+STYLE WS_VISIBLE | WS_POPUP | WS_CAPTION | DS_MODALFRAME | WS_SYSMENU
+CAPTION ""
+FONT 8, "MS Sans Serif"
+{
+    LTEXT "", IDBOX_STATIC1, 2, 2, 186, 20
+    EDITTEXT "", IDBOX_PSSWD0, 2, 24, 186, 12, ES_AUTOHSCROLL | ES_PASSWORD | WS_TABSTOP
+    PUSHBUTTON "", IDCBOX_ANULUJ, 136, 42, 52, 12, WS_TABSTOP
+    DEFPUSHBUTTON "", IDCBOX_OK, 82, 42, 52, 12, WS_TABSTOP
+}
+
+#define WCX          WIZ_CXDLG
+#define WCY          WIZ_CYDLG + 30
+
+RWIZARD0_DIALOG DIALOG 0, 0, WCX, WCY
+CAPTION ""
+FONT 8, "MS Sans Serif"
+{
+    LTEXT "", IDBOX_STATIC1, 5, 5, WCX - 10, 12
+    PUSHBUTTON "", IDCBOX_FONT1, 5, 30, 85, 12, WS_TABSTOP
+    LTEXT "", IDBOX_STATIC2, 95, 31, WCX - 100, 20
+    PUSHBUTTON "", IDCBOX_FONT2, 5, 52, 85, 12, WS_TABSTOP
+    LTEXT "", IDBOX_STATIC3, 95, 53, WCX - 100, 20
+    PUSHBUTTON "", IDCBOX_FONT3, 5, 74, 85, 12, WS_TABSTOP
+    LTEXT "", IDBOX_STATIC4, 95, 75, WCX - 100, 20
+    PUSHBUTTON "", IDCBOX_FONT4, 5, 96, 85, 12, WS_TABSTOP
+    LTEXT "", IDBOX_STATIC5, 95, 97, WCX - 100, 20
+    PUSHBUTTON "", IDCBOX_FONT5, 5, 118, 85, 12, WS_TABSTOP
+    LTEXT "", IDBOX_STATIC6, 95, 119, WCX - 100, 20
+    PUSHBUTTON "", IDCBOX_FONT6, 5, 140, 85, 12, WS_TABSTOP
+    LTEXT "", IDBOX_STATIC7, 95, 141, WCX - 100, 20
+}
+
+RWIZARD1_DIALOG DIALOG 0, 0, WCX, WCY
+CAPTION ""
+FONT 8, "MS Sans Serif"
+{
+    LTEXT "", IDBOX_STATIC1, 5, 5, WCX - 10, 12
+    LTEXT "", IDBOX_STATIC2, 5, 30, 70, 12
+    LTEXT "", IDBOX_STATIC3, 135, 30, 70, 12
+    LISTBOX "", IDBOX_STATIC4, 5, 44, 100, 70, WS_TABSTOP | WS_VSCROLL | LBS_NOINTEGRALHEIGHT, WS_EX_CLIENTEDGE
+    LISTBOX "", IDBOX_STATIC5, 135, 44, 100, 70,WS_TABSTOP | WS_VSCROLL | LBS_NOINTEGRALHEIGHT, WS_EX_CLIENTEDGE
+    PUSHBUTTON ">", IDCBOX_OK, 110, 59, 20, 12, WS_TABSTOP
+    PUSHBUTTON "<", IDCBOX_ANULUJ, 110, 89, 20, 12, WS_TABSTOP
+    LTEXT "", IDBOX_STATIC6, 5, 120, WCX - 10, 10
+    PUSHBUTTON "", IDBOX_CHECKBOX1, 5, 132, 70, 10, WS_TABSTOP | BS_AUTORADIOBUTTON
+    PUSHBUTTON "", IDBOX_CHECKBOX2, 80, 132, 70, 10, WS_TABSTOP | BS_AUTORADIOBUTTON
+    LTEXT "", IDBOX_STATIC7, 5, 144, WCX - 10, 10
+    PUSHBUTTON "", IDBOX_CHECKBOX3, 5, 156, 70, 12, WS_TABSTOP | BS_AUTORADIOBUTTON
+    PUSHBUTTON "", IDBOX_CHECKBOX4, 80, 156, 70, 12, WS_TABSTOP | BS_AUTORADIOBUTTON
+}
+
+RWIZARD2_DIALOG DIALOG 0, 0, WCX, WCY
+CAPTION ""
+FONT 8, "MS Sans Serif"
+{
+    LTEXT "", IDBOX_STATIC1, 5, 5, WCX - 10, 12
+    LTEXT "", IDBOX_STATIC2, 5, 30, WCX - 10, 10
+    EDITTEXT "", IDBOX_STATIC5, 5, 40, 200, 12, ES_AUTOHSCROLL | WS_TABSTOP
+    LTEXT "", IDBOX_STATIC3, 5, 54, WCX - 10, 10
+    EDITTEXT "", IDBOX_STATIC6, 5, 64, 200, 12, ES_AUTOHSCROLL | WS_TABSTOP
+    LTEXT "", IDBOX_STATIC4, 5, 78, WCX - 10, 10
+    EDITTEXT "", IDBOX_STATIC7, 5, 88, 200, 12, ES_AUTOHSCROLL | WS_TABSTOP
+}
+
+RWIZARD3_DIALOG DIALOG 0, 0, WCX, WCY
+CAPTION ""
+FONT 8, "MS Sans Serif"
+{
+    LTEXT "", IDBOX_STATIC1, 5, 5, WCX - 10, 12
+    PUSHBUTTON "", IDBOX_CHECKBOX0, 5, 30, WCX - 10, 10, WS_TABSTOP | BS_AUTOCHECKBOX
+    PUSHBUTTON "", IDBOX_CHECKBOX1, 5, 42, WCX - 10, 10, WS_TABSTOP | BS_AUTOCHECKBOX
+    PUSHBUTTON "", IDBOX_CHECKBOX2, 5, 54, WCX - 10, 10, WS_TABSTOP | BS_AUTOCHECKBOX
+    PUSHBUTTON "", IDBOX_CHECKBOX3, 5, 66, WCX - 10, 10, WS_TABSTOP | BS_AUTOCHECKBOX
+    
+    LTEXT "", IDBOX_STATIC2, 5, 82, WCX - 10, 10
+    EDITTEXT "", IDBOX_STATIC4, 5, 92, 100, 12, ES_AUTOHSCROLL | ES_CENTER | WS_TABSTOP
+    LTEXT "", IDBOX_STATIC3, 5, 108, WCX - 10, 10
+    EDITTEXT "", IDBOX_STATIC5, 5, 118, 100, 12, ES_AUTOHSCROLL | ES_CENTER | WS_TABSTOP
+}
+
+#define CX PROP_LG_CXDLG
+#define CY 136
+
+OPTIONS_MAIN_DIALOG DIALOG 0, 0, CX, CY
+FONT 8, "MS Sans Serif"
+{
+    PUSHBUTTON "", 0, 2, 2, CX - 4, CY - 4, BS_GROUPBOX
+    
+    PUSHBUTTON "", IDBOX_CHECKBOX0, 10, 10, CX - 20, 10, BS_AUTOCHECKBOX | WS_TABSTOP
+    PUSHBUTTON "", IDBOX_CHECKBOX1, 10, 22, CX - 20, 10, BS_AUTOCHECKBOX | WS_TABSTOP
+    PUSHBUTTON "", IDBOX_CHECKBOX2, 10, 34, CX - 20, 10, BS_AUTOCHECKBOX | WS_TABSTOP
+    PUSHBUTTON "", IDBOX_CHECKBOX3, 10, 46, CX - 20, 10, BS_AUTOCHECKBOX | WS_TABSTOP
+    PUSHBUTTON "", IDBOX_CHECKBOX4, 10, 58, CX - 20, 10, BS_AUTOCHECKBOX | WS_TABSTOP
+    PUSHBUTTON "", IDBOX_CHECKBOX5, 10, 70, CX - 20, 10, BS_AUTOCHECKBOX | WS_TABSTOP
+    PUSHBUTTON "", IDBOX_CHECKBOX6, 10, 82, CX - 20, 10, BS_AUTOCHECKBOX | WS_TABSTOP
+    PUSHBUTTON "", IDBOX_CHECKBOX7, 10, 94, CX - 20, 10, BS_AUTOCHECKBOX | WS_TABSTOP
+    PUSHBUTTON "", IDBOX_CHECKBOX8, 10, 106, CX - 20, 10, BS_AUTOCHECKBOX | WS_TABSTOP
+    PUSHBUTTON "", IDBOX_CHECKBOX9, 10, 118, CX - 20, 10, BS_AUTOCHECKBOX | WS_TABSTOP
+}
+
+OPTIONS_VISUAL_DIALOG DIALOG 0, 0, CX, CY
+FONT 8, "MS Sans Serif"
+{
+    PUSHBUTTON "", 0, 2, 2, CX - 4, CY - 4, BS_GROUPBOX
+    
+    PUSHBUTTON "", IDBOX_STATIC0, 10, 10, CX - 20, CY / 2 - 8, BS_GROUPBOX
+    LTEXT "", IDBOX_STATIC2, 18, 19, 70, 8
+    PUSHBUTTON "", IDCBOX_COLOR1, 18, 28, 70, 13, WS_TABSTOP | BS_OWNERDRAW
+    LTEXT "", IDBOX_STATIC3, 18, 43, 70, 8
+    PUSHBUTTON "", IDCBOX_COLOR2, 18, 52, 70, 13, WS_TABSTOP | BS_OWNERDRAW
+    LTEXT "", IDBOX_STATIC4, 130, 19, 70, 8
+    PUSHBUTTON "", IDCBOX_FONT1, 130, 28, CX - 148, 37, WS_TABSTOP | BS_OWNERDRAW
+    
+    PUSHBUTTON ":", IDBOX_STATIC1, 10, CY / 2 + 2, CX - 20, CY / 2 - 8, BS_GROUPBOX
+    LTEXT "", IDBOX_STATIC5, 18, (CY / 2 + 2) - 10 + 19, 70, 8
+    PUSHBUTTON "", IDCBOX_COLOR3, 18, (CY / 2 + 2) - 10 + 28, 70, 13, WS_TABSTOP | BS_OWNERDRAW
+    LTEXT "", IDBOX_STATIC6, 18, (CY / 2 + 2) - 10 + 43, 70, 8
+    PUSHBUTTON "", IDCBOX_COLOR4, 18, (CY / 2 + 2) - 10 + 52, 70, 13, WS_TABSTOP | BS_OWNERDRAW
+    LTEXT "", IDBOX_STATIC7, 130, (CY / 2 + 2) - 10 + 19, 70, 8
+    PUSHBUTTON "", IDCBOX_FONT2, 130, (CY / 2 + 2) - 10 + 28, CX - 148, 37, WS_TABSTOP | BS_OWNERDRAW
+}
+
+OPTIONS_SAFETY_DIALOG DIALOG 0, 0, CX, CY
+FONT 8, "MS Sans Serif"
+{
+    PUSHBUTTON "", 0, 2, 2, CX - 4, CY - 4, BS_GROUPBOX
+    
+    PUSHBUTTON "", IDBOX_CHECKBOX0, 10, 10, CX - 20, 10, BS_CHECKBOX | WS_TABSTOP
+    
+    PUSHBUTTON "", IDBOX_STATIC1, 10, 22, CX - 20, 64, BS_GROUPBOX
+    
+    LTEXT "", IDBOX_STATIC2, 18, 38, 60, 10
+    EDITTEXT "", IDBOX_PSSWD0, 80, 37, CX - 98, 12, ES_AUTOHSCROLL | ES_PASSWORD | WS_TABSTOP
+    
+    LTEXT "", IDBOX_STATIC3, 18, 52, 60, 10
+    EDITTEXT "", IDBOX_PSSWD1, 80, 51, CX - 98, 12, ES_AUTOHSCROLL | ES_PASSWORD | WS_TABSTOP
+    
+    CTEXT "", IDBOX_STATIC4, 18, 68, CX - 36, 10
+    
+    LTEXT "", IDBOX_STATIC5, 10, 90, CX - 20, CY - 100
+}        

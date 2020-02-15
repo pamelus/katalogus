@@ -1,0 +1,11 @@
+[OPTIONS]
+COMPRESS=12 Hall Zeck
+CNT=.\katalogus.cnt
+HLP=.\katalogus.hlp
+
+[FILES]
+.\katalogus.jrt
+
+[MAP]
+[WINDOWS]
+Main="",(0,0,800,800),,(r16777215),(r16777215),
